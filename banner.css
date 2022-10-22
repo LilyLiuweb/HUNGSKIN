@@ -1,0 +1,41 @@
+/*banner*/
+.banner_container{
+    width: 100%;
+    background: linear-gradient(111.61deg, #EFCBDD 2.46%, #FAEEF4 28.94%, rgba(250, 249, 252, 0.6) 41.58%, #EEF3F5 56.97%);
+    position: relative;
+    vertical-align: bottom;
+}
+.banner_container .row{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.banner_text{
+    margin-top: 300px;
+    margin-left: 30px;
+}
+.banner_text h1{
+    font-weight: 900;
+    font-size: 40px;
+    color: #ae316f;
+    margin: 20px 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.banner_container .banner_text p{
+    font-weight: 700;
+    margin: 20px 0;
+    font-size: 20px;
+    color: #636161;
+}
+.banner_container .banner{
+    /* width:50%; */
+    padding-left: 100px;
+    box-sizing: border-box;
+} 
+.banner_container .banner img{
+    width: 100%;
+}
+@media screen and (min-width:1024px) {
+    .banner_container .row{
+        display: flex;
+    }
+}

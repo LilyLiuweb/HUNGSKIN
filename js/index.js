@@ -1,0 +1,101 @@
+$(document).ready(function(){
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:false,
+        autoplay:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:5
+            }
+        }
+    })
+})
+function $id(id){
+    return document.getElementById(id);
+}
+/*header_scrollTop*/
+
+window.addEventListener("scroll",function(){
+    if(document.documentElement.scrollTop>400){
+        $id("header").classList.add("bg_change");
+    }else{
+        $id("header").classList.remove("bg_change");
+    }
+})
+/*index_slider*/
+var counter = 1;
+setInterval(function(){
+    document.getElementById('radio' + counter).checked = true;
+    counter++;
+    if(counter>3){
+        counter = 1;
+    }
+},3000);
+
+/*product_list_setheart*/
+
+/* function switchFavorite(){
+    let heart =document.querySelectorAll(".heart");
+    if(heart.title=="加入收藏"){
+        for(let i = 0; i<heart.length < i++){
+
+
+        }
+    } 
+    
+    if(heart.title=="加入收藏"){
+      heart.title="取消收藏";
+      heart.src="img/product_list/heart_red.png";
+    }else{
+      heart.src = "img/product_list/heart_white.png";
+      heart.title="加入收藏";
+    }
+  }
+*/
+      
+/* function init(){
+    //設定[加入收藏 或 取消收藏]的點按事件
+   document.querySelectorAll(".heart").onclick = switchFavorite;
+   
+  }//init
+  window.addEventListener("load", init, false); 
+})*/
+  /*product_introduction product_num*/
+  window.addEventListener("load", function(){ 
+        let btnPluses = document.getElementsByClassName("btnPlus");
+        let btnMinuses = document.getElementsByClassName("btnMinus");
+        let qtys = document.getElementsByClassName("qty");
+        
+        for(let i = 0; i<btnPluses.length ; i++){
+            btnPluses[i].onclick = function(e){
+                let qtyBox = e.target.previousElementSibling;
+                qtyBox.value = parseInt(qtyBox.value)+1
+            }
+        }
+        for(let i = 0; i<btnMinuses.length ; i--){
+            btnMinuses[i].onclick = function(e){
+                let qtyBox = e.target.previousElementSibling;
+                qtyBox.value = parseInt(qtyBox.value)+1
+            }
+        }
+    })
+
+    /*product_introduction showLarge*/
+    function showLarge(e){
+        let small = e.target;
+        document.getElementById('large').src = small.src;
+    }
+    function doFirst(){
+        let imgs = document.querySelectorAll('#smallPanel .pic img');
+        for(let i=0 ; i<imgs.length;i++){
+            imgs[i].onclick = showLarge;
+        }
+    }
+    window.addEventListener('load',doFirst)
