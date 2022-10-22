@@ -99,3 +99,11 @@ setInterval(function(){
         }
     }
     window.addEventListener('load',doFirst)
+
+    /*tips*/
+    $('.skin_type').click(function(){
+        $(this).addClass('.type_animate');
+    })
+    $('.skinCare_routine .row .box').click(function(){
+        $(this).addClass('.type_animate');
+    })
