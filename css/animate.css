@@ -1,0 +1,281 @@
+HTML CSS JSResult Skip Results Iframe
+EDIT ON
+@charset "utf-8";
+
+
+
+.fadeIn-delay0s{
+animation-name:fadeInAnime;
+animation-duration:.5s;
+animation-delay: 0;
+animation-fill-mode:forwards;
+opacity:0;
+}
+
+@keyframes fadeInAnime{
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+.fadeIn-delay1s{
+animation-name:fadeInAnime;
+animation-duration:.5s;
+animation-delay: .5s;
+animation-fill-mode:forwards;
+opacity:0;
+}
+
+@keyframes fadeInAnime{
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+.fadeIn-delay1-5s{
+animation-name:fadeInAnime;
+animation-duration:.5s;
+animation-delay: 1s;
+animation-fill-mode:forwards;
+opacity:0;
+}
+
+@keyframes fadeInAnime{
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+.fadeIn-delay2s{
+animation-name:fadeInAnime;
+animation-duration:.5s;
+animation-delay: 1.5s;
+animation-fill-mode:forwards;
+opacity:0;
+}
+
+@keyframes fadeInAnime{
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeUp{
+animation-name:fadeUpAnime;
+animation-duration:1s;
+/* animation-delay: 1s; */
+animation-fill-mode:forwards;
+opacity:0;
+}
+
+@keyframes fadeUpAnime{
+  from {
+    opacity: 0;
+  transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+  transform: translateY(0px);
+  }
+}
+
+.fadeDown{
+animation-name:fadeDownAnime;
+animation-duration:0.5s;
+animation-fill-mode:forwards;
+opacity:0;
+}
+
+@keyframes fadeDownAnime{
+  from {
+    opacity: 0;
+  transform: translateY(-100px);
+  }
+
+  to {
+    opacity: 1;
+  transform: translateY(0);
+  }
+}
+
+
+
+.fadeLeft{
+animation-name:fadeLeftAnime;
+animation-duration:0.8s;
+animation-fill-mode:forwards;
+opacity:0;
+}
+
+@keyframes fadeLeftAnime{
+  from {
+    opacity: 0;
+  transform: translateX(-100px);
+  }
+
+  to {
+    opacity: 1;
+  transform: translateX(0);
+  }
+}
+
+
+
+.fadeRight{
+animation-name:fadeRightAnime;
+animation-duration:0.8s;
+animation-fill-mode:forwards;
+opacity:0;
+}
+
+@keyframes fadeRightAnime{
+  from {
+    opacity: 0;
+  transform: translateX(100px);
+  }
+
+  to {
+    opacity: 1;
+  transform: translateX(0);
+  }
+}
+
+/*初始值*/
+.fadeInTrigger,
+.fadeUpTrigger,
+.fadeDownTrigger,
+.fadeLeftTrigger,
+.fadeRightTrigger{
+    opacity: 0;
+}
+
+
+
+/* 下*/
+.flipDown{
+animation-name:flipDownAnime;
+animation-duration:1s;
+animation-fill-mode:forwards;
+opacity:0;
+}
+
+@keyframes flipDownAnime{
+  from {
+    transform: perspective(2500px) rotateX(100deg);
+  opacity: 0;
+  }
+
+  to {
+    transform: perspective(2500px) rotateX(0);
+  opacity: 1;
+  }
+}
+
+
+/* 左*/
+.flipLeft{
+animation-name:flipLeftAnime;
+animation-duration:1s;
+animation-fill-mode:forwards;
+perspective-origin:left center;
+opacity:0;
+}
+
+@keyframes flipLeftAnime{
+  from {
+   transform: perspective(600px) translate3d(0, 0, 0) rotateY(30deg);
+  opacity: 0;
+  }
+
+  to {
+  transform: perspective(600px) translate3d(0, 0, 0) rotateY(0deg);
+  opacity: 1;
+  }
+}
+
+
+/* 左上 */
+.flipLeftTop{
+animation-name:flipLeftTopAnime;
+animation-duration:1s;
+animation-fill-mode:forwards;
+opacity:0;
+}
+
+@keyframes flipLeftTopAnime{
+  from {
+   transform: translate(-20px,80px) rotate(-15deg);
+  opacity: 0;
+  }
+
+  to {
+   transform: translate(0,0) rotate(0deg);
+  opacity: 1;
+  }
+}
+
+/* 右 */
+.flipRight{
+animation-name:flipRightAnime;
+animation-duration:1s;
+animation-fill-mode:forwards;
+perspective-origin:right center;
+opacity:0;
+}
+
+@keyframes flipRightAnime{
+  from {
+   transform: perspective(600px) translate3d(0, 0, 0) rotateY(-30deg);
+  opacity: 0;
+  }
+
+  to {
+  transform: perspective(600px) translate3d(0, 0, 0) rotateY(0deg);
+  opacity: 1;
+  }
+}
+
+/* 右上 */
+.flipRightTop{
+animation-name:flipRightTopAnime;
+animation-duration:1s;
+animation-fill-mode:forwards;
+opacity:0;
+}
+
+@keyframes flipRightTopAnime{
+  from {
+   transform: translate(-20px,80px) rotate(25deg);
+   opacity: 0;
+  }
+
+  to {
+   transform: translate(0,1) rotate(0deg);
+  opacity: 1;
+  }
+}
+
+/* 初始值　*/
+ 
+.flipDownTrigger,
+.flipLeftTrigger,
+.flipLeftTopTrigger,
+.flipRightTrigger,
+.flipRightTopTrigger{
+    opacity: 0;
+}
+
