@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>喚彼膚HUAGSKIN|喚醒你的每一寸肌膚</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/css_var.css">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/header&footer.css">
+    <link rel="stylesheet" href="./css/cart.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/banner.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.css' rel='stylesheet'>
+    <!-- font-awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- owl.carousel_css_cdn -->
+     <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <!-- jQuery.js v3.6.1 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"></script>
+
+</head>
+<body>
+    <input type="checkbox" name="checkbox" id="menu-switch">
+    <header id="header">
+        <nav class="main-nav" >
+            <!-- logo -->
+            <div class="logo">
+                <h1>喚彼膚</h1>
+                <a href="index.html">
+                    <img src="img/mainPage/logo.png" alt="logo">
+                </a>
+            </div>
+            <!-- hb -->
+            <label for="menu-switch" class="hb">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <!-- nav_bar -->
+            <div class="nav_bar">
+                <ul>
+                    <li><a href="new_customer.html"><i class="fa -solid fa-user-tag"></i>新客體驗</a></li>
+                    <li>
+                        <a href="product_list.html"><i class="fa -solid fa-bottle-droplet"></i>商品列表</a>
+                            <div class="sub_menu" id="sub_menu">
+                                <ul>
+                                    <li><a href="product_list.html">最新上市</a></li>
+                                    <li><a href="product_list.html">熱賣商品</a></li>
+                                    <li><a href="product_list.html">商品分類</a></li>
+                                    <li><a href="product_list.html">優惠組合</a></li>
+                                </ul>
+                            </div>
+                    </li>
+                    <li><a href="brand.html"><i class="fa -solid fa-spa"></i>品牌理念</a></li>
+                    <li><a href="tips.html"><i class="fa -solid fa-people-group"></i>保養技巧</a></li>
+                    <div class="icon_box">
+                        <li>
+                            <a href="account.html">
+                                <i class='bx bx-user-circle'></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class='bx bx-search-alt'></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="cart.html">
+                                <i class='bx bxs-cart' ></i>
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </header>
+<!-- banner -->
+<section class="banner_container">
+    <div class="row row-cols-1 row-cols-md-2">
+        <div class="col">
+            <div class="banner_text fadeLeft">
+                <h2>喚彼膚HUAGSKIN</h2>
+                <p>購物車</p>
+            </div>
+        </div>
+        <div class="col">
+           <div class="banner fadeRight">
+                <img src="img/mainPage/slide_3.jpg" alt="">
+            </div> 
+        </div>
+    </div>
+</section>
+<!-- main_cart -->
+<!--breadcrumb-->
+<div class="breadcrumb">
+    <span><a href="index.html">首頁</a></span>
+    <span><a href="cart.html">我的購物車</a></span>
+</div>
+<!-- cart_content -->
+<div class="cart_content">
+    <h2>商品清單</h2>
+    <table>
+        <tr>
+            <th>勾選商品</th>
+            <th>商品圖</th>
+            <th colspan="2">商品名稱</th>
+            <th>單價</th>
+            <th>數量</th>
+            <th>小計</th>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="" id="checkbox" checked></td>
+            <td><div class="pic"><img src="img/product_list/new_product.jpg" alt=""></div></td>
+            <td colspan="2">玫蘭克爾12號</td>
+            <td>$2000</td>
+            <td><input type="number" name="" id="num" value="1" min="0"></td>
+            <td>$2000 </td>
+            <td><p><a href="product_introduction.html">找類似</a></p>
+                <p>清除</p>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="" id="checkbox2" checked></td>
+            <td><div class="pic"><img src="img/product_list/top1.png" alt=""></div></td>
+            <td colspan="2">綠茶1號</td>
+            <td>$2000</td>
+            <td><input type="number" name="" id="num" value="1" min="0"></td>
+            <td>$2000 </td>
+            <td><p><a href="product_introduction.html">找類似</a></p>
+                <p>清除</p>
+            </td>
+        </tr>
+
+    </table>
+    <div class="sum_container">
+        <div class="box sum_box">
+            <div class="title sum_title">商品總計: </div>
+            <div class="price sum_price">$4000</div>
+        </div>
+        <div class="box bonus_box">
+        <div class="title bouns_title">紅利點數: </div>    
+        <div class="price bouns_point">100點</div>    
+        </div>
+        
+        <div class="btn_group">
+            <div class="pay button_primary"><a href="#">結帳</a></div>
+            <div class="continue_shop button_third"><a href="product_list.html">繼續購物</a></div>
+        </div>
+    </div>
+</div>
+<!-- footer -->
+<footer class="footer">
+    <div class="row email row-cols-1 row-cols-md-2">
+        <div class="col">
+            <label for="email">輸入電子郵件拿折扣</label>
+            <input type="email" name="email" id="email" placeholder="請輸入您的EMAIL">
+            <button class="submit">提交</ㄖ>
+        </div>
+        <div class="col pic_container">
+            <p>喚彼膚網路社群媒體</p>
+            <div class="pic"><i class='bx bxl-google'></i></div>
+            <div class="pic"><i class='bx bxl-twitter' ></i></div>
+            <div class="pic"><i class='bx bxl-instagram' ></i></div>
+            <div class="pic"><i class='bx bxl-apple'></i></div>
+        </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-5 row-cols-lg-6">
+        <div class="col">
+            <h3>新客體驗</h3>
+            <p><a href="">膚況檢測</a></p>
+            <p><a href="">心理測驗</a></p>
+            <p><a href="">結果適配</a></p>
+        </div>
+        <div class="col">
+            <h3>商品列表</h3>
+            <p><a href="">最新排行</a></p>
+            <p><a href="">商品分類</a></p>
+            <p><a href="">熱門商品</a></p>
+            <p><a href="">優惠組合</a></p>
+        </div>
+        <div class="col">
+            <h3>品牌理念</h3>
+            <p><a href="">關於我們</a></p>
+            <p><a href="">品牌故事</a></p>
+            <p><a href="">媒體報導</a></p>
+        </div>
+        <div class="col">
+            <h3>認識小農</h3>
+            <p><a href="">認證步驟</a></p>
+            <p><a href="">小農介紹</a></p>
+        </div>
+        <div class="col">
+            <h3>帳戶管理</h3>
+            <p><a href="">登入</a></p>
+            <p><a href="">註冊</a></p>
+            <p><a href="">忘記密碼</a></p>
+        </div>
+        <div class="col">
+            <h3>instagram照片</h3>
+            <div class="ig_container">
+                <div class="pic"><img src="img/mainPage/ig1.PNG" alt=""></div>
+                <div class="pic"><img src="img/mainPage/ig2.PNG" alt=""></div>
+                <div class="pic"><img src="img/mainPage/ig3.PNG" alt=""></div>
+                <div class="pic"><img src="img/mainPage/ig4.PNG" alt=""></div>
+            </div>
+        </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-1">
+        <div class="col">
+            <p>Copyright © 2022 LilyLiu. 保留所有權利</p>
+            <p>本網站為緯育TibaMe前端工程師第79期學員專題作品，本平台僅供學習、展示使用</p>
+            <p> 若有侵權疑慮，請私訊 [TibaMe-前端設計工程師養成班]，後續由專人協助處理。</p>
+        </div>    
+    </div>
+    <!-- jquery_cdn -->
+    <script src="https://code.jquery.com/jquery-3.6.1.slim.js" integrity="sha256-tXm+sa1uzsbFnbXt8GJqsgi2Tw+m4BLGDof6eUPjbtk=" crossorigin="anonymous"></script>
+    <!-- owl.carousel_cdn -->
+    <script src="/js/owl.carousel.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/animate.js"></script>
+</footer>
+</body>
+</html>

@@ -1,0 +1,94 @@
+/* breadcrumb */
+.breadcrumb{
+    background-color: var(--breadcrumb-bg-color);
+    height: 20px;
+    padding: 10px;
+}
+.breadcrumb span a{
+    color: var( --breadcrumb-color);
+}
+.breadcrumb span:nth-child(1)::after
+{
+    content:" / ";
+    color: var( --breadcrumb-color);
+}
+/* cart_content */
+.cart_content{
+    width: 100%;
+    height: 800px;
+    margin: 0 auto;
+}
+.cart_content h2{
+    font-size: 4rem;
+    color: var(--h2-color);
+    text-align: center;
+    margin: 20px;
+}
+.cart_content table{
+    width: 80%;
+    margin: 0 auto;
+    color: var(--cards-bg-color);
+}
+.cart_content table tr{
+    text-align: left;
+    height: 100px;
+    margin: 0 auto;
+    font-size: 2rem;
+}
+.cart_content table tr th{
+    vertical-align: middle;
+}
+.cart_content table input{
+    width: 30px;
+    height: 30px;
+}
+.cart_content table tr:nth-child(1){
+    border-bottom: 1px solid var(--cards-bg-color);
+}
+.cart_content table tr:nth-child(2),
+.cart_content table tr:nth-child(3)
+{
+    border-bottom: 1px solid var(--cards-bg-color);
+    background: linear-gradient(111.61deg, #EFCBDD 2.46%, #FAEEF4 28.94%, rgba(250, 249, 252, 0.6) 41.58%, #EEF3F5 56.97%);
+}
+.cart_content table tr:nth-child(2) td:nth-child(2) .pic,
+.cart_content table tr:nth-child(3) td:nth-child(2) .pic{
+    display: flex;
+    width: 100px;
+    height: 100px;
+}
+.cart_content table tr:nth-child(2) td:nth-child(2) .pic img,
+.cart_content table tr:nth-child(3) td:nth-child(2) .pic img{
+    width: 100%;
+    vertical-align: middle;
+}
+.cart_content table tr td{
+    vertical-align: middle;
+}
+.sum_container{
+    width: 80%;
+    margin: 20px auto;
+    height: 200px;
+    text-align: right;
+}
+.sum_container .box{
+    margin: 0 auto;
+    display: flex;
+    justify-content: end;
+}
+.sum_container .box .title{
+    margin: 0 20px 10px;
+    font-size:2rem;
+}
+.btn_group{
+    display: flex;
+    justify-content: center;
+    font-size:2rem;
+}
+.pay,.continue_shop {
+    margin:10px;
+}
+.price{
+    color: #BC2222;
+    font-size:2rem;
+}
