@@ -93,6 +93,20 @@
 }
 .item-body{
     position: relative;
+    animation: myAnim 1s ease 0s 1 normal forwards;
+}
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: rotateX(-100deg);
+		transform-origin: top;
+	}
+
+	100% {
+		opacity: 1;
+		transform: rotateX(0deg);
+		transform-origin: top;
+	}
 }
 .item-body .pic{
     max-width: 350px;
@@ -344,7 +358,7 @@
 .new_product .product_txt{
     max-width: 1200px;
     background: linear-gradient(15deg,#d194b6 20%,transparent 100%) center center / 100% 100% ,
-                url("img/product_list/new_product.jpg") no-repeat right center / auto 100% ;
+                url("../img/product_list/new_product.jpg") no-repeat right center / auto 100% ;
     display: flex;
     flex-direction: column;
     justify-content: center;
