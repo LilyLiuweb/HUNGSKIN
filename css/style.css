@@ -417,7 +417,8 @@
 /* product */
 .product_container{
     width: 100%;
-    background-color: #F4EFF0;
+    background:url(/img/mainPage/pink_bg1.png) no-repeat ;
+    box-sizing: border-box;
 }
 .product .row{
     max-width: 1200px;
@@ -444,14 +445,16 @@
     color: #ae316f;
     margin-left: 20px;
 }
-.product .row:nth-of-type(1) .col{
-    background: linear-gradient(179.95deg, rgba(255, 255, 255, 0.8) 31.73%, #F4EFF0 66.87%);
+.product .row .col{
+    /* background: linear-gradient(179.95deg, rgba(255, 255, 255, 0.8) 31.73%, #F4EFF0 66.87%); */
     border-radius: 50px;
-    margin: 0  auto 20px;
+    margin: 1rem auto;
 }
-
 .product .row .col img{
     width: 100%;
+}
+.item-body{
+    margin: 1rem;
 }
 .item-body .pic{
     max-width: 350px;
@@ -750,6 +753,7 @@
 /* ig_gallery */
 .ig_gallary{
     width: 100%;
+    background-image: url(/img/mainPage/pink_bg1.png);
 }
 .ig_gallery h3{
     font-size: 3rem;
@@ -818,7 +822,7 @@
 }
 .owl-carousel{
     display: inline-block;
-    background-color: #f5f5f5;
+    /* background-color: #f5f5f5; */
     margin: 0 auto;
     padding: 4rem;
     -webkit-box-sizing: border-box;

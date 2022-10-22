@@ -1,0 +1,114 @@
+/* brand_vision */
+.brand_vision{
+    width: 100%;
+    background-image: url(/img/mainPage/pink_bg.png);
+    background-repeat: no-repeat;
+}
+#our_consist{
+    max-width: 1200px;
+    margin: 0 auto;
+    background: linear-gradient(45deg,#d194b6 50%,transparent 50%) center center / 100% 100% ,
+    url("../img/mainPage/new_bg1.png") no-repeat right center / auto 100% ;
+}
+.brand_vision .row .consist_box{
+    width: 100%;
+}
+.brand_vision .row .consist_box h2{
+    font-size: 4rem;
+    letter-spacing: 2px;
+    margin: 2rem;
+    /* text-decoration: underline; */
+    color: #ae316f;
+}
+.brand_vision .row .consist_box h2:before{
+    content: "|";
+    width: 30px;
+    height: 30px;
+    background-color: #ae316f;
+    margin-right: 1rem;
+}
+.brand_vision .row .consist_box ul{
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin: 2rem;
+}
+.brand_vision .row .consist_box ul li{
+    margin-bottom: 1rem;
+}
+.brand_vision .row .consist_box ul li:hover{
+    text-decoration: underline;
+    transition: .5s;
+    color: aliceblue;
+}
+.brand_vision .wrap{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+.brand_vision .wrap .col .item img{
+    width: 100%;
+}
+
+/* mileStone */
+.mileStone{
+    width: 100%;
+    max-width: 1200px;
+    margin: 5rem auto;
+    background: 
+    url("../img/brand_vision/5.png") no-repeat  right center / auto 100% ,linear-gradient(90deg,#d194b6 50%,transparent 50%) center center / 100% 100%;
+    border-radius: 100px;
+    
+}
+.mileStone .row{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5rem;
+}
+.mileStone .row h2{
+    font-size: 4rem;
+    letter-spacing: 2px;
+    margin: 2rem;
+    /* text-decoration: underline; */
+    color: #ae316f;
+}
+.mileStone .row h2:before{
+    content: "|";
+    width: 30px;
+    height: 30px;
+    background-color: #ae316f;
+    margin: 3rem;
+}
+.mileStone .row .level{
+    display: flex;
+    align-items: center;
+    margin: 2rem auto;
+    gap: 2px;
+    background-color: #d194b6CC;
+    border-radius: 2rem;
+    /* padding: 2rem; */
+}
+.mileStone .row .level {
+    font-size: 4rem;
+    color: #333;
+}
+.mileStone .row .level .event{
+    font-size: 2.4rem;
+    color: #444;
+}
+@media screen and (max-width:768px){
+    .mileStone .row .level .year,
+    .mileStone .row .level .event{
+        font-size: 2rem;
+    }
+}
+@media screen and (min-width:1024px) {
+    .mileStone .row .level:before{
+        content:"";
+        width: 50px;
+         height: 50px;
+        background-color:#f8f8f8;
+        border-radius: 50%;
+        margin: 0 3rem;
+        box-shadow: 4px 4px 0 #ccc;
+    }
+}

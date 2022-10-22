@@ -310,13 +310,14 @@ nav .nav_bar ul li:hover .sub_menu ul li:last-child{
     .nav_bar ul .icon_box li a{
         width: 40px;
     }
-    nav.nav_bar ul
+    .header nav.nav_bar ul
     li:nth-child(1):hover,
     li:nth-child(2):hover,
     li:nth-child(3):hover,
     li:nth-child(4):hover{
-        text-align: center;
+/*         text-align: center;
         border-bottom: 2px solid #C0ACB6;
+        color: #9d0e55; */
     }
     nav .nav_bar ul li:nth-child(5),
     nav .nav_bar ul li:nth-child(6),
