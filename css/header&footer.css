@@ -52,10 +52,10 @@ nav .nav_bar ul{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding: 10px;
+    -webkit-box-pack: space-between;
+        -ms-flex-pack: space-between;
+            justify-content: space-between;
+    padding: 5px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
 }
@@ -78,12 +78,10 @@ nav .nav_bar ul li{
     right: 50px;
     width: 100px;
     padding: 20px 60px 20px 0;
-    /* box-shadow: 0 2px rgba(6,0,1,1); */
-    /* background-color: #fff; */
     text-align: left;
 }
 nav .nav_bar ul li .fa{
-    margin-right: 20px;
+    margin-right: 10px;
 }
 nav .nav_bar ul li .fa:last-child{
     margin-right:none;

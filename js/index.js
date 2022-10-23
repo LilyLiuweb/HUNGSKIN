@@ -147,3 +147,4 @@ setInterval(function(){
         pagination.innerHTML = li;
     }
     elem(allPages,1)
+    
