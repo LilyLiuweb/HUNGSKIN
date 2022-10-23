@@ -16,7 +16,8 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.css' rel='stylesheet'>
     <!-- font-awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-
+    <!-- owl.carousel_css_cdn -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
     <!-- jQuery.js v3.6.1 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"></script>
 </head>
@@ -91,13 +92,14 @@
             </div>
         </div>
     </section>
+    <a class="gotop" href="product_list.html"><i class='bx bxs-up-arrow-alt'></i><i class='bx bxl-upwork'></i></a>
     <!--category-->
     <div class="category">
         <div class="row row-cols-1">
             <nav class="col">
                 <ul>
-                    <li class="hot"><a href="#product_container">熱賣商品</a></li>
                     <li class="new"><a href="#new_product">最新商品</a></li>
+                    <li class="hot"><a href="#product_container">熱賣商品</a></li>
                     <li class="group"><a href="#product_recommandation ">商品組合</a></li>
                 </ul>
             </nav>
@@ -121,6 +123,25 @@
             </nav>
         </div>
     </div>
+    <!--new_product-->
+    <section class="new_product" id="new_product">
+        <div class="container">
+            <h2>最新商品</h2>
+            <div class="product_txt row">
+                <div class="tag">#NEW</div>
+                <h2>
+                    玫蘭克爾12號
+                    <small>
+                    香氣 : 花香調-玫瑰、迷迭香
+                    </small>
+                </h2>
+                <p class="-d">融合台灣中心南投信義鄉出產的玫瑰</p>
+                <p class="-d">超越乳液的輕盈質地，低油度配方</p>
+                <p class="-d">好吸收、提升保濕明亮度</p>
+                <button class="buyIt"><a href="product_introduction.html">立即選購</a></button>
+            </div>
+        </div>
+    </section>
     <!--product-area-->
     <main class="product_container" id="product_container">
         <div class="product">
@@ -463,7 +484,7 @@
             <p>氣味 : 天然草本</p>
             <p>容量:180ml</p>
             <p>價格:<span>1000元</span></p>
-            <button class="buyIt btn">去購買<i class="fa-solid fa-arrow-right"></i></ㄖ>
+            <button class="buyIt btn"><a href="">直接購買<i class="fa-solid fa-arrow-right"></i></a></ㄖ>
         </div>
     </div>
     <div class="col fadeUp">
@@ -482,35 +503,122 @@
             <p>氣味 : 天然草本</p>
             <p>容量:180ml</p>
             <p>價格:<span>1000元</span></p>
-            <button class="buyIt btn">去購買<i class="fa-solid fa-arrow-right"></i></button>
+            <button class="buyIt btn"><a href="#">直接購買<i class="fa-solid fa-arrow-right"></i></a></button>
         </div>
     </div>
 </div>
 <!--product_ranking-->
-<div class="product_ranking row">
-    <div class="col">
+<div class="title">
+    <div class="ranking">產品排名</div>
+</div>
+<div class="owl-carousel owl-theme">
+    <div class="item fadeUp">
+        <div class="rank">1</div>
+        <div class="dialog">
+            <div class="pic">
+                <div class="type">精華液</div>
+                <img src="img/product_list/spray1.jpg" alt="">
+            </div>
+        </div>
+        <div class="tag_name">
+            <span class="period">定期購入</span>
+            <span class="must_buy sensitive">敏感肌適用</span>
+        </div>
+        <div class="detail_box">
+            <div class="name">玫蘭克爾12號</div>
+            <div class="price_box">
+                <span class="price">$2000</span>
+                <span class="capacity">200g</span>
+            </div>
+        </div>
+        
+    </div>
+    <div class="item fadeUp">
+        <div class="rank">2</div>
+        <div class="dialog">
+            <div class="pic">
+                <div class="type">乳液</div>
+                <img src="img/product_list/spray2.jpg" alt="">
+            </div>
+        </div>
+        <div class="tag_name">
+            <span class="period">定期購入</span>
+            <span class="must_buy acen">痘痘肌適用</span>
+        </div>
+        <div class="detail_box">
+            <div class="name">綠茶1號</div>
+            <div class="price_box">
+                <span class="price">$2000</span>
+                <span class="capacity">200g</span>
+            </div>
+        </div>
+        
+    </div>
+    <div class="item fadeUp">
+        <div class="rank">3</div>
+        <div class="dialog">
+            <div class="pic">
+                <div class="type">化妝水</div>
+                <img src="img/product_list/spray3.jpg" alt="">
+            </div>
+        </div>
+        <div class="tag_name">
+            <span class="period">定期購入</span>
+            <span class="must_buy combination">混和肌適用</span>
+        </div>
+        <div class="detail_box">
+            <div class="name">菊花2號</div>
+            <div class="price_box">
+                <span class="price">$2000</span>
+                <span class="capacity">200g</span>
+            </div>
+        </div>
+        
+    </div>
+    <div class="item fadeUp">
+        <div class="rank">4</div>
+        <div class="dialog">
+            <div class="pic">
+                <div class="type">乳液</div>
+                <img src="img/product_list/spray4.jpg" alt="">
+            </div>
+        </div>
+        <div class="tag_name">
+            <span class="period">定期購入</span>
+            <span class="must_buy acen">痘痘肌適用</span>
+        </div>
+        <div class="detail_box">
+            <div class="name">綠茶1號</div>
+            <div class="price_box">
+                <span class="price">$2000</span>
+                <span class="capacity">200g</span>
+            </div>
+        </div>
+        
+    </div>
+    <div class="item fadeUp">
+        <div class="rank">5</div>
+        <div class="dialog">
+            <div class="pic">
+                <div class="type">化妝水</div>
+                <img src="img/product_list/spray5.jpg" alt="">
+            </div>
+        </div>
+        <div class="tag_name">
+            <span class="period">定期購入</span>
+            <span class="must_buy combination">混和肌適用</span>
+        </div>
+        <div class="detail_box">
+            <div class="name">菊花2號</div>
+            <div class="price_box">
+                <span class="price">$2000</span>
+                <span class="capacity">200g</span>
+            </div>
+        </div>
         
     </div>
 </div>
- <!--new_product-->
- <section class="new_product" id="new_product">
-    <div class="container">
-        <h2>最新商品</h2>
-        <div class="product_txt row">
-            <div class="tag">#NEW</div>
-            <h2>
-                玫蘭克爾12號
-                <small>
-                香氣 : 花香調-玫瑰、迷迭香
-                </small>
-            </h2>
-            <p class="-d">融合台灣中心南投信義鄉出產的玫瑰</p>
-            <p class="-d">超越乳液的輕盈質地，低油度配方</p>
-            <p class="-d">好吸收、提升保濕明亮度</p>
-            <button class="buyIt"><a href="product_introduction.html">立即選購</a></button>
-        </div>
-    </div>
-</section>
+ 
 <!-- footer -->
 <footer class="footer">
     <div class="row email row-cols-1 row-cols-md-2">

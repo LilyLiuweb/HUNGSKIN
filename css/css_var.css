@@ -118,18 +118,18 @@ body{
   position: fixed;
   width: 50px;
   height: 50px;
-  /* background-color: #BA6565; */
   bottom: 40px;
   right: 50px;
   text-decoration: none;
   text-align: center;
-  font-size: 22px;
+  font-size: 3rem;
   z-index: 100;
+
+  transition: translateY .2s;
 }
-.gotop .pic{
-  width: 40px;
-  height: 40px;
+.gotop i{
+  color: #ae316f;
 }
-.gotop .pic img{
-  width: 100%;
+.gotop:hover i{
+  transform: translateY(-10px);
 }
