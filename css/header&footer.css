@@ -65,6 +65,23 @@ nav .nav_bar ul li{
     padding: 1px;
     text-align: center;
 }
+.search input{
+    display: none;
+}
+.search:focus input{
+    display: block;
+}
+
+.search:focus{
+    position: absolute;
+    top: 60%;
+    right: 50px;
+    width: 100px;
+    padding: 20px 60px 20px 0;
+    /* box-shadow: 0 2px rgba(6,0,1,1); */
+    /* background-color: #fff; */
+    text-align: left;
+}
 nav .nav_bar ul li .fa{
     margin-right: 20px;
 }
