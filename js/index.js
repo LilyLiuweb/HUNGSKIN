@@ -4,6 +4,7 @@ $(document).ready(function(){
         margin:10,
         nav:false,
         autoplay:true,
+        dots:3,
         responsive:{
             0:{
                 items:1
@@ -107,3 +108,43 @@ setInterval(function(){
     $('.skinCare_routine .row .box').click(function(){
         $(this).addClass('.type_animate');
     })
+
+    /*pagination*/
+    var pagination = document.querySelector('.pagination');
+    let allPages = 6;
+     
+    function elem(allPages,page){
+        let li= '';
+    
+        let beforePages = page - 1;
+        let afterPages = page + 1;
+        let aActive;
+    
+        //左箭頭
+        if(page > 1){
+            li += `<li onclick="elem(allPages, ${page-1})">&laquo;</li>`
+        }
+    
+        //自動生成頁數
+        for ( let pageLength = beforePages ;pageLength <= afterPages; pageLength++ ){
+    
+            if(pageLength > allPages){
+                continue;
+            }
+            if(pageLength == 0){
+                pageLength = pageLength+1;
+            }
+            if(page == pageLength){
+                aActive = 'active';
+            }else{
+                aActive = '';
+            }
+            li+= ` <li class="${aActive}" onclick = "elem(allPages,${pageLength})">${pageLength}</li>`;
+        }
+        //右箭頭
+        if(page < allPages){
+            li += `<li onclick="elem(allPages, ${page+1})">&raquo;</li>`
+        }
+        pagination.innerHTML = li;
+    }
+    elem(allPages,1)
