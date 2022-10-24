@@ -43,10 +43,8 @@ nav .logo h1{
 nav .logo img{
     vertical-align: top;
 }
-
 /* nav_bar */
 nav .nav_bar ul{ 
-    /* width: 100%; */
     position: relative;
     right: 2rem;
     display: -webkit-box;
@@ -60,7 +58,7 @@ nav .nav_bar ul{
             box-sizing: border-box;
 }
 nav .nav_bar ul li{
-    width: 120px;
+    width: 90px;
     line-height: 10px;
     padding: 1px;
     text-align: center;
@@ -81,7 +79,7 @@ nav .nav_bar ul li{
     text-align: left;
 }
 nav .nav_bar ul li .fa{
-    margin-right: 10px;
+    margin-right: 5px;
 }
 nav .nav_bar ul li .fa:last-child{
     margin-right:none;
@@ -91,18 +89,18 @@ nav .nav_bar ul li a{
     font-weight: 500;
 }
 
-nav .nav_bar ul li:nth-child(5),
 nav .nav_bar ul li:nth-child(6),
-nav .nav_bar ul li:nth-child(7)
+nav .nav_bar ul li:nth-child(7),
+nav .nav_bar ul li:nth-child(8)
 {
-    width: 50px;
+    width: 30px;
     height: 20px;
     padding: 0;
     /* padding-left: 8px; */
 }
-nav .nav_bar ul li:nth-child(5)  a i,
 nav .nav_bar ul li:nth-child(6)  a i,
-nav .nav_bar ul li:nth-child(7)  a i{
+nav .nav_bar ul li:nth-child(7)  a i,
+nav .nav_bar ul li:nth-child(8)  a i{
     width: 70%;
     padding: 0;
     margin: 0;

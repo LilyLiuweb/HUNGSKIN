@@ -855,7 +855,6 @@
 }
 .owl-carousel{
     display: inline-block;
-    /* background-color: #f5f5f5; */
     margin: 0 auto;
     padding: 4rem;
     -webkit-box-sizing: border-box;
@@ -870,7 +869,9 @@
 }
 .owl-nav{
     font-size: 30px;
-    text-align: right;
+    text-align: center;
+    color: #ae316f;
+    font-weight: 900;
 }
 .owl-carousel .item
 {

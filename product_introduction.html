@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <!-- owl.carousel_css_cdn -->
     <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <!--owl.theme.default_css_cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- jQuery.js v3.6.1 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"></script>
 </head>
@@ -38,36 +40,37 @@
                 <span></span>
                 <span></span>
             </label>
-            <!-- nav_bar -->
-            <div class="nav_bar">
+             <!-- nav_bar -->
+             <div class="nav_bar">
                 <ul>
                     <li><a href="new_customer.html"><i class="fa -solid fa-user-tag"></i>新客體驗</a></li>
                     <li>
-                        <a href="#"><i class="fa -solid fa-bottle-droplet"></i>商品列表</a>
+                        <a href="product_list.html"><i class="fa -solid fa-bottle-droplet"></i>商品列表</a>
                             <div class="sub_menu" id="sub_menu">
                                 <ul>
-                                    <li><a href="">最新上市</a></li>
-                                    <li><a href="">熱賣商品</a></li>
-                                    <li><a href="">商品分類</a></li>
-                                    <li><a href="">優惠組合</a></li>
+                                    <li><a href="product_list.html">最新上市</a></li>
+                                    <li><a href="product_list.html">熱賣商品</a></li>
+                                    <li><a href="product_list.html">商品分類</a></li>
+                                    <li><a href="product_list.html">優惠組合</a></li>
                                 </ul>
                             </div>
                     </li>
-                    <li><a href="#"><i class="fa -solid fa-spa"></i>品牌理念</a></li>
-                    <li><a href="#"><i class="fa -solid fa-people-group"></i>認識小農</a></li>
+                    <li><a href="brand.html"><i class="fa -solid fa-spa"></i>品牌理念</a></li>
+                    <li><a href="tips.html"><i class="fa -solid fa-people-group"></i>保養技巧</a></li>
+                    <li><a href="farmer.html"><i class="fa -solid fa-people-group"></i>認識小農</a></li>
                     <div class="icon_box">
                         <li>
-                            <a href="#">
+                            <a href="account.html">
                                 <i class='bx bx-user-circle'></i>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
-                                <i class='bx bx-search-alt'></i>
+                            <a href="#" class="search">
+                                <i class='bx bx-search-alt'></i><input type="text" name="" id="search_text">
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="cart.html">
                                 <i class='bx bxs-cart' ></i>
                             </a>
                         </li>
@@ -226,7 +229,7 @@
     <div class="item fadeUp">
         <div class="dialog">
             <div class="pic">
-                <img src="img/mainPage/people1.PNG" alt="">
+                <img src="img/mainPage/people1.png" alt="">
             </div>
             <h4>消紅腫痘痘</h4>
             <p>由於最近剛好遇到換季期間皮膚不是很穩定，加上太忙疏於保養導致這幾天突然下巴及鼻子長了兩顆很大的紅腫痘痘，修復時間只有一個晚上比想像中快太多完全來不及拍攝我的痘痘在隔天消了一大半，使用到第三天痘痘就全消了。</p>
@@ -264,7 +267,7 @@
     </div>
     <div class="item fadeUp">
         <div class="dialog">
-            <div class="pic"><img src="img/mainPage/people4.PNG"></div>
+            <div class="pic"><img src="img/mainPage/people4.png"></div>
             <h4>吸收快速</h4>
             <p>在這個季節我先使用完小棕瓶精華後再上膠原霜膠原霜的使用量為一顆黃豆量DM上的秒吸收真的沒有騙人真的馬上就吸收，所以若要加強按摩需要再加一點用量使用五天下來，皮膚肌底平穩肌膚保持健康光澤覺得開心的是試用的當下在我生理期前皮膚狀況最糟的時候讓我平安的度過了這幾天</p>
         </div>
@@ -384,11 +387,12 @@
     <script src="./js/index.js"></script>
     <script src="./js/animate.js"></script>
 </footer>
-    <!-- jquery_cdn -->
-    <script src="https://code.jquery.com/jquery-3.6.1.slim.js" integrity="sha256-tXm+sa1uzsbFnbXt8GJqsgi2Tw+m4BLGDof6eUPjbtk=" crossorigin="anonymous"></script>
-    <!-- owl.carousel_cdn -->
-    <script src="/js/owl.carousel.min.js"></script>
+   <!-- jquery_cdn -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <!-- owl.carousel_cdn -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./js/index.js"></script>
+    <script src="./js/animate.js"></script>
 </footer>
 </body>
 </html>
