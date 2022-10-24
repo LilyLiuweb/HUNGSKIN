@@ -1,4 +1,3 @@
-$(window).load(function(){
     $('.owl-carousel').owlCarousel({
         loop:true,
         margin:5,
@@ -16,10 +15,13 @@ $(window).load(function(){
             }
         }
     })
-})
 function $id(id){
     return document.getElementById(id);
 }
+var headerBg = document.getElementById('carouselExampleIndicators')
+window.addEventListener('scroll',function(){
+    headerBg.style.opacity = 1 - +window.pageXOffset/550+'';
+})
 
 /*header_scrollTop*/
 
