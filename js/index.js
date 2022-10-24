@@ -20,6 +20,7 @@ $(document).ready(function(){
 function $id(id){
     return document.getElementById(id);
 }
+
 /*header_scrollTop*/
 
 window.addEventListener("scroll",function(){
