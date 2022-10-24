@@ -2,7 +2,6 @@
 /* page */
 .page{
     width: 100%;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -10,18 +9,15 @@
     background: linear-gradient(111.61deg, #EFCBDD 2.46%, #FAEEF4 28.94%, rgba(250, 249, 252, 0.6) 41.58%, #EEF3F5 56.97%);
     margin: 0 auto;
 }
-.page .section0{
-    width: 20rem;
-    border: 2px solid #c094aa;
-    background: #FAEEF4;
-    margin-bottom: 10rem;
-    border-radius: 1rem;
+#section0{
+    height: 100vh;
 }
-.page .section0 a{
+#section0 a{
     color: #B1A3A2;
     font-size: 16px;
 }
-.page h1{
+.page {
+    /* height: 100vh; */
     font-weight: 900;
     font-size: 30px;
     color: #c094aa;
@@ -29,7 +25,7 @@
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding-bottom: 50px;
 }
-.page h2{
+.main_title{
     font-weight: 900;
     font-size: 40px;
     color: #be7198;
@@ -48,15 +44,15 @@
 .page .cards{
     width: 100%;
     max-width: 1200px;
-    height: 1200px;
+    /* height: 1200px; */
 }
-.page0 h2{
-    position: absolute;
+.page h2{
+/*     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    font-size: 10rem;
-    color: #fff;
+    transform: translate(-50%,-50%); */
+    font-size: 3rem;
+    color: #be7198;
 } 
 .cards{
     width: 100%;
@@ -74,7 +70,7 @@
     color: #B1A3A2;
 }
 .card_img{
-    width: 190px; 
+    max-width: 190px; 
     margin: 0 auto;
 }
 .card_img img{

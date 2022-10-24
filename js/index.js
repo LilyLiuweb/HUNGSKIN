@@ -42,34 +42,6 @@ setInterval(function(){
     }
 },3000);
 
-/*product_list_setheart*/
-
-/* function switchFavorite(){
-    let heart =document.querySelectorAll(".heart");
-    if(heart.title=="加入收藏"){
-        for(let i = 0; i<heart.length < i++){
-
-
-        }
-    } 
-    
-    if(heart.title=="加入收藏"){
-      heart.title="取消收藏";
-      heart.src="img/product_list/heart_red.png";
-    }else{
-      heart.src = "img/product_list/heart_white.png";
-      heart.title="加入收藏";
-    }
-  }
-*/
-      
-/* function init(){
-    //設定[加入收藏 或 取消收藏]的點按事件
-   document.querySelectorAll(".heart").onclick = switchFavorite;
-   
-  }//init
-  window.addEventListener("load", init, false); 
-})*/
   /*product_introduction product_num*/
   window.addEventListener("load", function(){ 
         let btnPluses = document.getElementsByClassName("btnPlus");
@@ -85,7 +57,7 @@ setInterval(function(){
         for(let i = 0; i<btnMinuses.length ; i--){
             btnMinuses[i].onclick = function(e){
                 let qtyBox = e.target.previousElementSibling;
-                qtyBox.value = parseInt(qtyBox.value)+1
+                qtyBox.value = parseInt(qtyBox.value)-1
             }
         }
     })

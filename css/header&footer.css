@@ -401,8 +401,13 @@ footer .row:nth-child(1){
         -ms-flex-align: center;
             align-items: center;
     margin: 0 auto;
-    padding: 2rem 0;
+    padding: 1rem;
     border-bottom: 1px solid #ccc;
+}
+@media  screen and(min-width:1024px) {
+    footer .row:nth-child(1){
+        padding: 2rem;
+    }
 }
 footer .row:nth-child(1) .col{
     display: flex;
@@ -462,10 +467,7 @@ footer .row:nth-child(1) .pic_container
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-}
-footer .row:nth-child(1) .pic_container p{
-    margin-top: 1rem;
-    padding-right: 1rem;
+            align-items: center;
 }
 footer .row:nth-child(1) .pic_container i {
     font-size: 30px;
@@ -483,7 +485,7 @@ footer .row .ig_container{
 footer .row .col .pic{
     width: 6rem;
     height: 5rem;
-    margin: .5rem 0 0 .5rem;
+    margin: 2.5rem 0 0 .5rem;      
 }
 footer .row .col .pic img{
     width: 100%;
