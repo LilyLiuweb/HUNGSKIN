@@ -476,16 +476,14 @@
 .item-body .-d{
     font-weight: 300;
     letter-spacing: 2px;
-    /* padding: 20px 0 10px 62px; */
 }
 .product_detail{
     font-size: 20px;   
-    /* padding: 20px 0 10px 62px; */
+    line-height: 2.5rem;
 }
 .product_price{
     font-size: 16px;
     margin: 1rem auto;
-    /* padding: 20px 0 10px 62px; */
     text-align: right;
 }
 .product_price span{

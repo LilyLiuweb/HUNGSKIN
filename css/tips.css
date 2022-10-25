@@ -103,6 +103,7 @@
     display: flex;
     flex-direction: column;
     margin: 2rem;
+    position: relative;
 }
 .skin_type .row .col .type:hover{
     transform: translateY(-5px);
@@ -122,7 +123,7 @@
 .skin_type .row .col .type .txt{
     width: 100%;
     flex-grow: 1;
-    margin: 2rem auto;
+    margin: 1rem auto;
     font-size: 2.4rem;
     line-height: 2rem;
     letter-spacing: .1rem;
@@ -134,14 +135,50 @@
     width: 3rem;    
     height: 3rem;
     background-color: #fff;
-    border-radius: 50%;
 }
-
-.skin_type .row .col .type .product{
+.skin_type .row .col:hover .detail{
+    display: block;
+    position: absolute;
+    top: -20%;
+    left: 0;
+    background: 
+    linear-gradient(111.61deg, #EFCBDD 2.46%, #FAEEF4 28.94%, rgba(250, 249, 252, 0.6) 41.58%, #EEF3F5 56.97%);
+    border-radius: 50%;
+    width: 100%;
+    height: 62%;
+    transform: translate(-8%,40%);
+    line-height: 3rem;
     font-size: 2rem;
+    margin: 1rem;
+    border-radius: 100px;
+    padding: 1rem;
+}
+.skin_type .row .col:hover .detail p{
+    padding: 2rem;
+}
+.skin_type .row .col .detail{
+    display: none;
+    margin: 1rem auto;
+}
+.skin_type .row .col .type .btn{
+    margin: 2rem;
+    background-color:#ae316f;
+    border: none;
+    border-radius: 20px;
+    padding: 1rem;
+    color: #f5f5f5;
+    font-size: 1.6rem;
+}
+.skin_type .row .col .type .btn:hover{
+    background-color: #f5f5f5;
+    color: #ae316f;
+}
+.skin_type .row .col .type .product{
+    font-size: 2.4rem;
     color: #C4A5AF;
     text-align: center;
     font-weight: 600;
+    margin: 3rem;
 }
 @media screen and (max-width:768px) {
     .skin_type .row .col .type .txt{
@@ -149,7 +186,6 @@
         margin: 2rem auto;
         font-size: 1.4rem;
         line-height: 2rem;
-
     }
     .skin_type .row .col .type .txt:before{
         content:" #";

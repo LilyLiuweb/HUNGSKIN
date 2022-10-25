@@ -170,10 +170,9 @@
     color: #ae316f;
     margin-left: 20px;
 }
-.product .row:nth-of-type(1) .col{
+.product .row:nth-of-type(1) .col,.product .row:nth-of-type(2) .col{
     margin: 0  auto 20px;
 }
-
 .product .row .col img{
     width: 100%;
 }
