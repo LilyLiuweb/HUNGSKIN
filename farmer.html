@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-tw">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -53,7 +53,7 @@
                             </div>
                     </li>
                     <li><a href="brand.html"><i class="fa -solid fa-spa"></i>品牌理念</a></li>
-                    <li><a href="tips.html"><i class="fa -solid fa-people-group"></i>保養技巧</a></li>
+                    <li><a href="tips.html"><i class='bx bxl-sketch'></i>保養技巧</a></li>
                     <li><a href="farmer.html"><i class="fa -solid fa-people-group"></i>認識小農</a></li>
                     <li><a href="new_customer.html"><i class="fa -solid fa-user-tag"></i>新客體驗</a></li>
                     <div class="icon_box">
@@ -274,8 +274,15 @@
         </div>
         <!-- jquery_cdn -->
         <script src="https://code.jquery.com/jquery-3.6.1.slim.js" integrity="sha256-tXm+sa1uzsbFnbXt8GJqsgi2Tw+m4BLGDof6eUPjbtk=" crossorigin="anonymous"></script>
-        <!-- owl.carousel_cdn -->
-        <script src="./js/owl.carousel.min.js"></script>
         <script src="./js/index.js"></script>
         <script src="./js/animate.js"></script>
+        <script>
+            window.addEventListener("scroll",function(){
+            if(document.documentElement.scrollTop>400){
+                    $id("header").classList.add("bg_change");
+                }else{
+                    $id("header").classList.remove("bg_change");
+                }
+            })
+        </script>
     </footer>

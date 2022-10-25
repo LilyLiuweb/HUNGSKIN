@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-tw">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -48,7 +48,7 @@
                             </div>
                     </li>
                     <li><a href="brand.html"><i class="fa -solid fa-spa"></i>品牌理念</a></li>
-                    <li><a href="tips.html"><i class="fa -solid fa-people-group"></i>保養技巧</a></li>
+                    <li><a href="tips.html"><i class='bx bxl-sketch'></i>保養技巧</a></li>
                     <li><a href="farmer.html"><i class="fa -solid fa-people-group"></i>認識小農</a></li>
                     <li><a href="new_customer.html"><i class="fa -solid fa-user-tag"></i>新客體驗</a></li>
                     <div class="icon_box">
@@ -77,12 +77,12 @@
         <div class="row page page0 section" id="section0">
             <div class="col"></div>
             <h2 class="main_title">心理測驗</h2>
-            <button class="section0"><a href="#section1">開始測驗</a></button>
+            <button class="jump_btn section0"><a href="#section1">開始測驗</a></button>
         </div>
         <div class="page page1 section" id="section1">
             <h2 class="cards_title">朋友約你出去你會選擇?
             </h2>
-            <div class="cards row row-cols-1 row-cols-md-2 row-cols-lg-4">
+            <div class="cards row row-cols-2 row-cols-md-2 row-cols-lg-4">
                 <div class="card col">
                     <div class="card_title"><a href="#section2">A.爬山</a></div>
                     <div class="card_img"><a href="#section2"><img src="img/newCustomer/climb.jpg" alt="climb"></a></div>
@@ -101,11 +101,11 @@
                 </div>
             </div>
         </div>
-        <a class="gotop" href="product_introduction.html"><i class='bx bxs-up-arrow-alt'></i><i class='bx bxl-upwork'></i></a>
+        <a class="gotop" href="new_customer.html"><i class='bx bxs-up-arrow-alt'></i><i class='bx bxl-upwork'></i></a>
         <div class="page page2 section" id="section2">
             <h2 class="cards_title">如果要跟喜歡的人出去會想給人什麼感覺?
             </h2>
-            <div class="cards row row-cols-1 row-cols-md-2 row-cols-lg-4">
+            <div class="cards row row-cols-2 row-cols-md-2 row-cols-lg-4">
                 <div class="card col">
                     <div class="card_title"><a href="#section3">A. 活潑</a></div>
                     <div class="card_img"><a href="#section3"><img src="img/newCustomer/active.jpg" alt="active"></a></div>
@@ -127,7 +127,7 @@
         <div class="page page3 section" id="section3">
             <h2 class="cards_title">如果前面有一片美景你覺得會是什麼?
             </h2>
-            <div class="cards row row-cols-1 row-cols-md-2 row-cols-lg-4">
+            <div class="cards row row-cols-2 row-cols-md-2 row-cols-lg-4">
                 <div class="card col">
                     <div class="card_title"><a href="#section4">A. 森林</a></div>
                     <div class="card_img"><a href="#section4"><img src="img/newCustomer/forest.jpg" alt="forest"></a></div>
@@ -149,7 +149,7 @@
         <div class="page page4 section" id="section4">
             <h2 class="cards_title">如果你要聞一種香味你最喜歡哪一種?
             </h2>
-            <div class="cards row row-cols-1 row-cols-md-2 row-cols-lg-4">
+            <div class="cards row row-cols-2 row-cols-md-2 row-cols-lg-4">
                 <div class="card col">
                     <div class="card_title"><a href="#section5">A.花香</a></div>
                     <div class="card_img"><a href="#section5"><img src="img/mainPage/flower.png" alt="climb"></a></div>
@@ -175,7 +175,7 @@
                     <div class="name_area">
                         <label for="userName">請輸入您的名字</label>
                         <input type="text" id="userName">
-                        <button id="btn">檢測結果</button>
+                        <button class="jump_btn" id="btn">檢測結果</button>
                         <p id="result"></p> 
                     </div>
                     
@@ -209,7 +209,7 @@
         </div>
         <div class="page page6 section" id="section6">
             <h2>適配商品</h2>
-            <div class="row row-cols-1 row-cols-md-2">
+            <div class="row row-cols-2">
                 <div class="col">
                     <div class="product">
                         <div class="img_box">
@@ -222,10 +222,10 @@
                             <p>適合喜歡使用後感覺膚質清爽無負擔的你</p>
                             <p>原價:1000元</p>
                             <p>特價：770元</p>
-                            <span>優惠</span>
+                            <!-- <span>優惠</span> -->
                             <p>優惠至2022/10/31</p>
                         </div>
-                        <div class="btn_group"><a class="jump_btn" href="#section7">選購商品</a></div>
+                        <a class="jump_btn" href="#section7">選購商品</a>
                     </div>
                 </div>
                 <div class="col">
@@ -240,10 +240,9 @@
                             <p>適合喜歡使用後感覺膚質清爽無負擔的你</p>
                             <p>原價:1000元</p>
                             <p>特價：770元</p>
-                            <span>優惠</span>
+                            <!-- <span>優惠</span> -->
                             <p>優惠至2022/10/31</p>
-                        </div>
-                        <a class="jump_btn" href="#section7">選購商品</a>
+                        </div>                  <a class="jump_btn" href="#section7">選購商品</a>
                     </div>
                 </div>
                 
@@ -362,15 +361,11 @@
             <p> 若有侵權疑慮，請私訊 [TibaMe-前端設計工程師養成班]，後續由專人協助處理。</p>
         </div>    
     </div>
+</footer>
     <!-- jquery_cdn -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- owl.carousel_cdn -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./js/animate.js"></script>
-</footer>
- <!-- jquery_cdn -->
- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="./js/new_customer.js"></script>
-<script src="./js/index.js"></script>
+    <script src="./js/new_customer.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 </html>

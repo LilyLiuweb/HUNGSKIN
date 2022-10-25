@@ -460,12 +460,11 @@
 .product_location{
     display: flex;
     align-items: center;
-    /* padding: 20px 0 10px 62px; */
     font-size: 20px;
     font-weight: 300;
     color: #B1A3A2;
     letter-spacing: 1px;    
-    width: fit-content;
+    width: fit-content
 }
 .product_location .pic{
     width: 30px;
@@ -562,6 +561,18 @@
     }
     .product .label span{
         margin: .2rem;
+        font-size: 1.4rem;
+    }
+    .product_location{
+        display: none;
+    }
+    .product_name{
+        font-size: 2rem;
+    }
+    .item-body .product_label .label{
+        font-size: 1.4rem;
+    }
+    .product_detail{
         font-size: 1.4rem;
     }
 }
@@ -941,8 +952,9 @@
     letter-spacing: .1rem;
 }
 .store_location .map{
-    aspect-ratio: 100%/400px;
+    aspect-ratio: 100%/500px;
     margin: 0 auto;
+    vertical-align: bottom;
 }
 .store_location .map iframe{
     width: 100%;

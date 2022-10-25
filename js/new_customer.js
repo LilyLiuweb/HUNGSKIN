@@ -7,3 +7,11 @@ $(function(){
      $('.detail ul li h3').css('color','#B1A3A2')
  })
 })
+
+window.addEventListener("scroll",function(){
+  if(document.documentElement.scrollTop>400){
+      $id("header").classList.add("bg_change");
+  }else{
+      $id("header").classList.remove("bg_change");
+  }
+})
