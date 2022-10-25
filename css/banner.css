@@ -2,8 +2,8 @@
 .banner_container{
     width: 100%;
     background: 
-    linear-gradient(111.61deg, #EFCBDD 2.46%, #FAEEF4 28.94%, rgba(250, 249, 252, 0.6) 41.58%, #EEF3F5 56.97%),
-    url(/img/farmer/farmer6.jpg) top center scroll;
+    linear-gradient(111.61deg, #EFCBDD 2.46%, #FAEEF4 28.94%, rgba(250, 249, 252, 0.6) 41.58%, #EEF3F5 56.97%) center center,
+    url(/img/farmer/farmer6.jpg)  left bottom;
     position: relative;
     vertical-align: bottom;
 }
