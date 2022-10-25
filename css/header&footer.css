@@ -459,6 +459,9 @@ footer .row:nth-child(3) .col:last-child p{
     text-align: center;
     margin: 0 auto;
 }
+footer .row:nth-child(2) .col:nth-child(1){
+    order:6;
+}
 footer .row:nth-child(1) .pic_container
 {
     display: -webkit-box;

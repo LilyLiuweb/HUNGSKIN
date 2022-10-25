@@ -1,7 +1,9 @@
 /*banner*/
 .banner_container{
     width: 100%;
-    background: linear-gradient(111.61deg, #EFCBDD 2.46%, #FAEEF4 28.94%, rgba(250, 249, 252, 0.6) 41.58%, #EEF3F5 56.97%),url(/img/farmer/farmer6.jpg) top center;
+    background: 
+    linear-gradient(111.61deg, #EFCBDD 2.46%, #FAEEF4 28.94%, rgba(250, 249, 252, 0.6) 41.58%, #EEF3F5 56.97%),
+    url(/img/farmer/farmer6.jpg) top center scroll;
     position: relative;
     vertical-align: bottom;
 }
@@ -27,8 +29,6 @@
     color: #636161;
 }
 .banner_container .banner{
-    /* max-width:800px; */
-    padding-top: 6rem;
     padding-left: 100px;
     box-sizing: border-box;
     display: flex;
@@ -38,6 +38,11 @@
 } 
 .banner_container .banner img{
     width: 100%;
+}
+@media screen and (min-width:768px) {
+    .banner_container .banner{
+        padding-top: 16rem;
+    }
 }
 @media screen and (min-width:1024px) {
     .banner_container .row{

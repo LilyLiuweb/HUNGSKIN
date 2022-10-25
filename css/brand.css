@@ -53,7 +53,7 @@
 .mileStone{
     width: 100%;
     max-width: 1200px;
-    margin: 5rem auto;
+    margin: 0 auto;
     background: 
     url("../img/brand_vision/5.png") no-repeat  right center / auto 100% ,linear-gradient(90deg,#d194b6 50%,transparent 50%) center center / 100% 100%;
     border-radius: 100px;
@@ -62,13 +62,12 @@
 .mileStone .row{
     max-width: 1200px;
     margin: 0 auto;
-    padding: 5rem;
+    padding: 2rem 5rem;
 }
 .mileStone .row h2{
     font-size: 4rem;
     letter-spacing: 2px;
     margin: 2rem;
-    /* text-decoration: underline; */
     color: #ae316f;
 }
 .mileStone .row h2:before{
@@ -76,7 +75,10 @@
     width: 30px;
     height: 30px;
     background-color: #ae316f;
-    margin: 3rem;
+    margin-right: 1rem;
+}
+.mileStone .row .col{
+    margin: 0 auto;
 }
 .mileStone .row .level{
     display: flex;
@@ -85,20 +87,20 @@
     gap: 2px;
     background-color: #d194b6CC;
     border-radius: 2rem;
-    /* padding: 2rem; */
+    padding: 1rem;
 }
 .mileStone .row .level {
     font-size: 4rem;
-    color: #333;
 }
 .mileStone .row .level .event{
     font-size: 2.4rem;
-    color: #444;
+    color: #111;
 }
 @media screen and (max-width:768px){
     .mileStone .row .level .year,
     .mileStone .row .level .event{
         font-size: 2rem;
+        flex-grow: 1;
     }
 }
 @media screen and (min-width:1024px) {
