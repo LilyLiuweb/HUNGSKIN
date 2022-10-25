@@ -1,36 +1,25 @@
-/* breadcrumb */
-.breadcrumb{
-    background-color: var(--breadcrumb-bg-color);
-    height: 20px;
-    padding: 10px;
-}
-.breadcrumb span a{
-    color: var( --breadcrumb-color);
-}
-.breadcrumb span:nth-child(1)::after
-{
-    content:" / ";
-    color: var( --breadcrumb-color);
-}
 /* cart_content */
+body a{
+    color: #111;
+}
 .cart{
     width: 100%;
 }
 .cart_content{
     max-width: 1200px;
-    height: 530px;
+    height: 630px;
     margin: 0 auto;
 }
 .cart_content h2{
     font-size: 4rem;
-    color: var(--h2-color);
+    color: #ae316f;
     text-align: center;
     margin: 20px;
 }
 .cart_content table{
     width: 100%;
     margin: 0 auto;
-    color: var(--cards-bg-color);
+    color: #111;
     padding: 1rem;
 }
 .cart_content table tr{
@@ -47,7 +36,7 @@
     height: 30px;
 }
 .cart_content table tr:nth-child(1){
-    border-bottom: 1px solid var(--cards-bg-color);
+    border-bottom: 1px solid #ddd;
 }
 
 .cart_content table tr:nth-child(2) td:nth-child(2) .pic,
@@ -60,6 +49,9 @@
 .cart_content table tr:nth-child(3) td:nth-child(2) .pic img{
     width: 100%;
     vertical-align: middle;
+}
+.cart_content table tr:nth-child(2) td:last-child{
+    margin: 1rem auto;
 }
 .cart_content table tr td{
     vertical-align: middle;
@@ -74,6 +66,8 @@
     margin: 0 auto;
     display: flex;
     justify-content: end;
+    color: #111;
+    background-color: #fff;
 }
 .sum_container .box .title{
     margin: 0 20px 10px;
@@ -91,9 +85,27 @@
     color: #BC2222;
     font-size:2rem;
 }
+@media screen and (max-width:768px){
+    .cart_content tr th,
+    .cart_content tr td
+    {
+        font-size: 1.6rem;
+    }
+    .cart_content table tr:nth-child(1) th:nth-child(2),
+    .cart_content table tr:nth-child(2) td:nth-child(2),
+    .cart_content table tr:nth-child(3) td:nth-child(2)
+    {
+        display: none;
+    }
+
+}
 /* more-info */
 .more-info{
     width: 100%;
+    font-size: 2rem;
+}
+.more-info .area h2{
+    font-size: 3rem;
 }
 .more-info .row{
     max-width: 1200px;
@@ -137,8 +149,6 @@
     
 }
 .wrapper{
-    /* width:100%; */
-    /* max-width: 960px; */
     margin:30px auto;
     background:#fefefe;
 }
@@ -151,4 +161,9 @@
 .area li{
     padding: 10px; 
     border-bottom: 1px solid #ddd;
+}
+@media screen and (max-width:768px) {
+    .more-info{
+        font-size: 1.6rem;
+    }
 }

@@ -68,16 +68,13 @@
 }
 .brand_vision .row{
     max-width: 1200px;
-    /* height: 50vh; */
     background:#F0E4E6;
     padding: 30px;
     box-sizing: border-box;
     margin: 0 auto;
 }
 .brand_vision .text_container{
-    /* width: 50%; */
     margin: 0 auto;
-    /* padding-top: 30px; */
     padding-left: 50px;
 }
 .brand_vision .text_container>h2{
@@ -237,9 +234,6 @@
 }
 .slogn .col:first-child{
     max-width: 600px;
-    /* position: relative;
-    top: -50px;
-    left: 20px; */
 }
 .slogn .col .pic{
     width: 80%;
@@ -384,7 +378,6 @@
     font-size: 40px;
     font-family: Arial, Helvetica, sans-serif;
     color: #ae316f;
-    /* margin: 0 0 4rem 4rem; */
     padding: 4rem;
     letter-spacing: 2px;
     text-align: center;
@@ -413,6 +406,7 @@
     background: linear-gradient(179.95deg, rgba(255, 255, 255, 0.8) 31.73%, #F4EFF0 66.87%);
     border-radius: 50px;
     padding: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .item-body .pic{
     /* max-width: 350px; */
@@ -439,7 +433,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
-    width: 25%;
+    /* width: 25%; */
     line-height: 2rem;  
     overflow: hidden;
 }
@@ -562,6 +556,10 @@
     .product .label span{
         margin: .2rem;
         font-size: 1.4rem;
+    }
+    .product_label .label span:not(.label:nth-child(1) span)::before
+    {
+        content:"/";
     }
     .product_location{
         display: none;

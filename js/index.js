@@ -18,10 +18,7 @@
 function $id(id){
     return document.getElementById(id);
 }
-var headerBg = document.getElementById('carouselExampleIndicators')
-window.addEventListener('scroll',function(){
-    headerBg.style.opacity = 1 - +window.pageXOffset/550+'';
-})
+
 
 /*header_scrollTop*/
 
@@ -123,6 +120,6 @@ setInterval(function(){
         if(page < allPages){
             li += `<li onclick="elem(allPages, ${page+1})">&raquo;</li>`
         }
-        pagination.innerHTML = 'li';
+        pagination.innerHTML = li;
     }
     elem(allPages,1)

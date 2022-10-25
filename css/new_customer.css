@@ -70,17 +70,45 @@
     width: 100%;
     border-radius: 20px;
 }
-.jump_btn{
+.txt_box .jump_btn{
+    display: block;
+    width: 200px;
+    line-height: 50px;
+    border-radius: 30px;
+    background-color: #C4A5AF;
     text-align: center;
-    padding: 1rem;
-    border-radius: 10rem;
-    color: #555;
-    font-size: 16px;
-
-    width: 20rem;
-    border: 2px solid #c094aa;
-    background: #FAEEF4;
-    margin-bottom: 1rem;
+    font-size: 14px;
+    border: none;
+    margin: 1rem;
+}
+.txt_box .jump_btn a{
+    color: #f5f5f5;
+}
+.txt_box .jump_btn:hover{
+    border: 1px solid #ae316f;
+    background-color: #f5f5f5;
+    font-weight: 900;
+}
+.jump_btn{
+    width: 200px;
+    line-height: 50px;
+    border-radius: 30px;
+    background-color: #C4A5AF;
+    text-align: center;
+    font-size: 14px;
+    border: none;
+    margin: 1rem;
+}
+.jump_btn a{
+    color: #f5f5f5;
+}
+.jump_btn:hover{
+    border: 1px solid #ae316f;
+    background-color: #f5f5f5;
+    font-weight: 900;
+}
+.jump_btn:hover a{
+    color: #ae316f;
 }
 @media screen and (max-width:767px) {
     .page5,.page6,.page7{
