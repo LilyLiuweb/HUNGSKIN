@@ -94,7 +94,18 @@
         </div>
     </section>
     <!-- skinCare routine -->
-    <section class="skinCare_routine">
+    <h2 class="switch_title">點擊下方圖片以觀看日間/夜間保養步驟</h2>
+    <div class="switch">
+        <div class="day">
+            <h2>日間保養</h2>
+            <img src="./img/tips/sun.png" alt="sun">
+        </div>
+        <div class="night">
+            <h2>夜間保養</h2>
+            <img src="./img/tips/night.png" alt="night">
+        </div>
+    </div>
+    <section class="skinCare_routine changeBg">
         <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 ">
             <div class="title">
                 <h2>HOW TO</h2>
@@ -104,7 +115,7 @@
                 <div class="card">
                     <div class="pic">
                         <div class="tag">01.清洗</div>
-                        <img src="./img/tips/skinCare_routine1.png" alt="">
+                        <img src="./img/tips/skinCare_routine1.png" alt="skinCare_routine1">
                     </div>
                     <div class="txt">臉部保養步驟最重要的第一步就是要先清潔！</div>
                 </div>
@@ -136,8 +147,8 @@
                     <div class="txt">眼雙內含的油脂量不同，可預防眼袋</div>
                 </div>
             </div>
-            <div class="col box">
-                <div class="card">
+            <div class="col box day_routine">
+                <div class="card ">
                     <div class="pic">
                         <div class="tag">05.乳霜</div>
                         <img src="./img/tips/skinCare_routine5.png" alt="skinCare_routine5">
@@ -145,8 +156,8 @@
                     <div class="txt">乳霜內含的油脂量不同，可依個人膚質選擇乳霜，使用後皮膚柔軟，同時也具有滑潤皮膚的功效</div>
                 </div>
             </div>
-            <div class="col box">
-                <div class="card">
+            <div class="col box day_routine">
+                <div class="card ">
                     <div class="pic">
                         <div class="tag">06.防曬乳</div>
                         <img src="./img/tips/skinCare_routine6.png" alt="skinCare_routine6">
@@ -176,9 +187,9 @@
                         <p>
                             正確使用所有商品即可
                          </p>
-                    </div>
-                    <div class="product">適合商品:玫瑰12號</div>
-                    <button class="btn">選購適合商品</button>
+                         <div class="product">適合商品:玫瑰12號</div>
+                        </div>
+                        <button class="btn"><a href="product_introduction.html">選購商品</a></button>
                 </div>
             </div>
             <div class="col">
@@ -194,9 +205,9 @@
                         <p>
                             可利用保濕化妝水、精華液、乳液或乳霜加強肌膚保濕程度，以維護肌膚天然屏障。
                         </p>
+                        <div class="product">適合商品:草本組合</div>
                     </div>
-                    <div class="product">適合商品:草本組合</div>
-                    <button class="btn">選購適合商品</button>
+                    <button class="btn"><a href="product_introduction.html">選購商品</a></button>
                 </div>
             </div>
             <div class="col">
@@ -212,9 +223,9 @@
                         <p>
                              選擇產品時，應使用能控油同時保濕的臉部保養品，並定期做深層清潔，避免老廢角質堆積。
                         </p>
+                        <div class="product">適合商品:草本組合</div>
                     </div>
-                    <div class="product">適合商品:草本組合</div>
-                    <button class="btn">選購適合商品</button>
+                    <button class="btn"><a href="product_introduction.html">選購商品</a></button>
                 </div>
             </div>
             <div class="col">
@@ -230,9 +241,9 @@
                         <p>
                             更需要注重臉部保濕，保養品建議選用成份溫和、不刺激、不含酒精的產品。
                         </p>
+                        <div class="product">適合商品:綠茶1號</div>
                     </div>
-                    <div class="product">適合商品:綠茶1號</div>
-                    <button class="btn">選購適合商品</button>
+                    <button class="btn"><a href="product_introduction.html">選購商品</a></button>
                 </div>
             </div>
             <div class="col">
@@ -248,9 +259,9 @@
                         <p>
                            水楊酸的結構類似阿斯匹靈，可幫助改善痘痘問題。
                         </p>
+                        <div class="product">適合商品:木質2號</div>
                     </div>
-                    <div class="product">適合商品:木質2號</div>
-                    <button class="btn">選購適合商品</button>
+                    <button class="btn"><a href="product_introduction.html">選購商品</a></button>
                 </div>
             </div>
             <div class="col">
@@ -266,9 +277,9 @@
                         <p>
                            混合肌保養的重要原則就是「分區保養」，建議針對容易出油、長痘痘的T字部位，使用清爽、不油膩的保養品
                         </p>
+                        <div class="product">適合商品:柑橘3號</div>
                     </div>
-                    <div class="product">適合商品:柑橘3號</div>
-                    <button class="btn">選購適合商品</button>
+                    <button class="btn"><a href="product_introduction.html">選購商品</a></button>
                 </div>
             </div>
         </div>
@@ -340,10 +351,25 @@
     </div>
     <!-- jquery_cdn -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- owl.carousel_cdn -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./js/index.js"></script>
     <script src="./js/animate.js"></script>
+
+    <script>
+            /*tips day&night*/
+        $('.day').click(function(){
+            $('.changeBg').css('background-color','#FFD772');
+            $('.changeBg').css('opacity',1);
+            $('.day_routine').css('display','block');
+            $('.day_routine').css('display','block');
+        })
+
+        $('.night').click(function(){
+            $('.changeBg').css('background-color','#333');
+            $('.day_routine').css('display','none');
+            $('.day_routine').css('display','none');
+            $('.changeBg').css('opacity',1);
+        })
+    </script>
 </footer>
 </body>
 </html>

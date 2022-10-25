@@ -56,8 +56,12 @@ setInterval(function(){
         }
         for(let i = 0; i<btnMinuses.length ; i--){
             btnMinuses[i].onclick = function(e){
-                let qtyBox = e.target.previousElementSibling;
-                qtyBox.value = parseInt(qtyBox.value)-1
+                let qtyBox = e.target.nextElementSibling;
+                if(qtyBox.value > 0){
+                qtyBox.value = parseInt(qtyBox.value)-1;  
+                }else{
+                    e.target.nextElementSibling= 0;
+                } 
             }
         }
     })
@@ -119,7 +123,6 @@ setInterval(function(){
         if(page < allPages){
             li += `<li onclick="elem(allPages, ${page+1})">&raquo;</li>`
         }
-        pagination.innerHTML = li;
+        pagination.innerHTML = 'li';
     }
     elem(allPages,1)
-    

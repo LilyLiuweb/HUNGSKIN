@@ -1,15 +1,16 @@
 .skinCare_routine{
     width: 100%;
-/*     background-image: url(/img/tips/bg.jpg); */
 }
 .skinCare_routine .row{
     max-width: 1200px;
     margin: 0 auto;
+    padding: 2rem;
 }
 .skinCare_routine .row .title{
     width: 100%;
     margin: 2rem;
 }
+
 .skinCare_routine .row .title h2{
     color: #ccc;
     font-size: 5rem;
@@ -23,6 +24,46 @@
     color: #ae316f;
     font-weight: 700;
     text-shadow: 2px 2px 0 #ccc;
+}
+.skinCare_routine .row .title p:not(span){
+    color: #EEF3F5;
+}
+/*switch_function*/
+.switch_title{
+    max-width: 1200px;
+    font-size: 4rem;
+    margin: 2rem auto;
+    text-align: center;
+}
+.switch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin: 1rem auto;
+}
+.changeBg{
+    opacity: .5;
+    transition: opacity 1s;
+}
+.day{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+}
+.night{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+}
+.day_routine{
+    transition: opacity 1s;
+}
+.day img,
+.night img{
+    width: 100%;
 }
 .skinCare_routine .row .box{
     display: flex;
@@ -70,6 +111,7 @@
     .skinCare_routine .row .box .card .pic .tag{
         font-size:2.4rem
     }
+    
 }
 /* skin_type */
 .skin_type {
@@ -99,7 +141,6 @@
     text-shadow: 2px 2px 0 #ccc;
 }
 .skin_type .row .col .type{
-    height: 100%;
     display: flex;
     flex-direction: column;
     margin: 2rem;
@@ -145,13 +186,13 @@
     linear-gradient(111.61deg, #EFCBDD 2.46%, #FAEEF4 28.94%, rgba(250, 249, 252, 0.6) 41.58%, #EEF3F5 56.97%);
     border-radius: 50%;
     width: 100%;
-    height: 62%;
-    transform: translate(-8%,40%);
+    height: 75%;
+    transform: translate(-8%,35%);
     line-height: 3rem;
     font-size: 2rem;
     margin: 1rem;
-    border-radius: 100px;
     padding: 1rem;
+    border-radius: 100px;
 }
 .skin_type .row .col:hover .detail p{
     padding: 2rem;
@@ -161,24 +202,28 @@
     margin: 1rem auto;
 }
 .skin_type .row .col .type .btn{
-    margin: 2rem;
+    /* margin: 2rem; */
     background-color:#ae316f;
     border: none;
     border-radius: 20px;
     padding: 1rem;
     color: #f5f5f5;
     font-size: 1.6rem;
+    margin: 0 auto;
 }
 .skin_type .row .col .type .btn:hover{
     background-color: #f5f5f5;
     color: #ae316f;
 }
+.skin_type .row .col .type .btn a{
+    color: #f5f5f5;
+}
 .skin_type .row .col .type .product{
     font-size: 2.4rem;
-    color: #C4A5AF;
+    color: #ac6974;
     text-align: center;
     font-weight: 600;
-    margin: 3rem;
+    /* margin: 3rem; */
 }
 @media screen and (max-width:1024px) {
     .skin_type .row .col:hover .detail{     
@@ -202,12 +247,16 @@
     }
     .skin_type .row .col .type .product{
         font-size: 1.6rem;
-        font-weight: 400;
-    }
-    .skin_type .row .col:hover .detail{     
-        overflow: hidden;
+        font-weight: 700;
     }
     .skin_type .row .col:hover .detail p{
-        text-overflow: ellipsis;
+        display: none;
+    }
+    .skin_type .row .col:hover .detail{
+        height: 60%;
+        transform: translate(-20%,45%);
+    }
+    .skin_type .row .col:hover .detail .btn{
+        font-size: 1.2rem;
     }
 }

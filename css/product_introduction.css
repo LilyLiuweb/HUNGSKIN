@@ -105,7 +105,7 @@ input[type='number']{
 }
 .relative_product .pic_container .pic{
     position: relative;
-    max-width: 250px;
+    width: 250px;
     margin: 10px;
 }
 .relative_product .pic_container .pic img{
@@ -190,16 +190,16 @@ input[type='number']{
     border-radius:1rem ;
 }
 .product_detail .row .col .txt{
+    font-size: 2rem;
     position: relative;
-    width: 70%;
-    padding: 2rem;
-    /* background-color: rgb(140, 138, 135); */
+    width: 100%;
+    padding: 1rem;
     border-radius: 2rem;
-    height: 50%;
     margin: 1rem;
     overflow: hidden;
     z-index: 10;
     box-shadow: 2px 2px 0 #ccc;
+    letter-spacing: 2px;
 } 
 .product_detail .row .col .txt:nth-child(1){
     top: 0;
@@ -209,11 +209,13 @@ input[type='number']{
     top: 0;
     left: 2rem;
 }
+.product_detail .row .col .txt p{
+    font-size: 2.4rem;
+}
 .product_detail .row .col .txt p,.product_detail .row .col .txt ul{
     width: 100%;
     color: #111;
     font-size: 1.6rem;
-    /* margin: 2rem; */
     letter-spacing: 2px;
     line-height: 2rem;
     padding: 1rem;
@@ -274,6 +276,19 @@ input[type='number']{
     padding: 4rem;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+}
+.owl-prev,
+.owl-next{
+    border: none;
+    font-size: 30px;
+    margin: 2rem;
+    background-color: #fff;
+}
+.owl-nav{
+    font-size: 30px;
+    text-align: center;
+    color: #ae316f;
+    font-weight: 900;
 }
 .owl-carousel .item
 {

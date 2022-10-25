@@ -13,8 +13,11 @@
     color: var( --breadcrumb-color);
 }
 /* cart_content */
-.cart_content{
+.cart{
     width: 100%;
+}
+.cart_content{
+    max-width: 1200px;
     height: 530px;
     margin: 0 auto;
 }
@@ -25,9 +28,10 @@
     margin: 20px;
 }
 .cart_content table{
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     color: var(--cards-bg-color);
+    padding: 1rem;
 }
 .cart_content table tr{
     text-align: left;
