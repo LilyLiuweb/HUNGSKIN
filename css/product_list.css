@@ -45,11 +45,9 @@
     background:url(/img/mainPage/flower.png) no-repeat;
 }
 .new_product .container{
-    /* width: 100%; */
     margin: 0 auto;
 }
 .new_product .container>h2{
-    /* width: 100%; */
     font-size: 40px;
     font-family: Arial, Helvetica, sans-serif;
     color: #ae316f;
@@ -246,7 +244,7 @@
 .product_name{
     font-size: 20px;
     font-weight: 700;
-    color: #ae316f;
+    color: #b4726e;
     text-align: center;
 }
 .product_location{
