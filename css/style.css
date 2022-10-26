@@ -64,7 +64,6 @@
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-
 }
 .brand_vision .row{
     max-width: 1200px;
@@ -278,7 +277,7 @@
     transform: scale(1.2);
 }
 .slogn .row .col .btn{
-    width: 200px;
+    width: 150px;
     line-height: 50px;
     border-radius: 30px;
     background-color: #C4A5AF;
@@ -286,32 +285,29 @@
     margin-top: -2rem;
     text-align: center;
     font-size: 14px;
-    color: #f5f5f5;
+    
     border: none;
 }
-.slogn .row .col:nth-child(1) .btn{
-    margin: 0 auto;
-}
-.slogn .row .col:nth-child(1) .btn>a{
+.slogn .row .col .btn a{
     color: #f5f5f5;
 }
-.slogn .row .col:nth-child(1) .btn a>i{
-    margin-left: 30px;
-    color: #f5f5f5;
+.slogn .row .col .btn i{
+    margin-left: 10px;
 }
-.slogn .row .col:nth-child(1)> .btn:hover{
+.slogn .row .col .btn:hover{
     background-color: #f5f5f5;
-    border:1px solid #e2e0e1 ;
+    border:1px solid #ae316f;
 }
-.slogn .row .col:nth-child(1)> .btn:hover a{
-     color: #ae316f;
-     font-weight: 900;
+.slogn .row .col .btn:hover a{
+    color: #ae316f;
+
 }
-.slogn .row .col:nth-child(1)> .btn:hover i{
+.slogn .row .col .btn:hover i{
     transform: translateX(10px);
     transition: .5s;
     color: #ae316f;
 }
+
 @media screen and (max-width:1023px) {
 
     .slogn .col .wrap_slogn div:nth-of-type(1){
@@ -367,7 +363,7 @@
 /* product */
 .product_container{
     width: 100%;
-    background:url(/img/mainPage/pink_bg1.png) no-repeat ;
+    background:url(../img/mainPage/pink_bg1.png) no-repeat ;
     box-sizing: border-box;
 }
 .product .row{
@@ -455,8 +451,8 @@
     display: flex;
     align-items: center;
     font-size: 20px;
-    font-weight: 300;
-    color: #B1A3A2;
+    font-weight: 500;
+    color: #b4726e;
     letter-spacing: 1px;    
     width: fit-content
 }
@@ -504,11 +500,11 @@
 }
 .detail i{
     margin-left: 10px;
-    color: #CFBFC4;
+    color: #f5f5f5;
 }
 .detail:hover{
     background-color: #f5f5f5;
-    border:1px solid #e2e0e1 ;
+    border:1px solid #ae316f ;
 }
 .detail:hover a{
     font-size: 14px;
@@ -773,17 +769,6 @@
 .ig_gallery .row .col .pic img{
     width: 100%;
 }
-/* @media screen and (min-width:1024px) {
-    .ig_gallery h3{
-        font-size: 40px;
-    }
-    .ig_gallery h3:before{
-        font-size: 30px;
-    }
-    .ig_gallery h3:after{
-        font-size: 30px;
-    } 
-}*/
 /* share */
 .title>.share{
     font-size: 40px;
@@ -819,7 +804,7 @@
     border: none;
     font-size: 30px;
     margin: 2rem;
-    background-color: #fff;
+    background-color: #f5f5f5;
 }
 .owl-nav{
     font-size: 30px;
@@ -836,7 +821,7 @@
 .owl-carousel .item .dialog
 {
     width: 100%;
-    background-color: #fafafa;
+    background-color: #f5f5f5;
     -webkit-box-shadow: 0 0 4px #ccc;
     box-shadow: 0 4px 4px #ccc;
     padding: 1rem;
