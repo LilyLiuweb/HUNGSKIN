@@ -76,8 +76,8 @@
     margin: 0 auto;
     padding-left: 50px;
 }
-.brand_vision .text_container>h2{
-    font-size: 3rem;
+.brand_vision .text_container h2{
+    font-size: 4rem;
     margin-bottom: 30px;
     color: #ae316f;
 }
@@ -164,7 +164,7 @@
         max-width: 1200px;
     }
     .brand_vision .text_container h2{
-        font-size: 3rem;
+        font-size: 4rem;
         position: relative;
     }
     .brand_vision .text_container>ul li{
@@ -280,7 +280,7 @@
     width: 150px;
     line-height: 50px;
     border-radius: 30px;
-    background-color: #C4A5AF;
+    background-color: #ae316f;
     margin-left: 2rem;
     margin-top: -2rem;
     text-align: center;
@@ -489,7 +489,7 @@
     width: 150px;
     line-height: 50px;
     border-radius: 30px;
-    background-color: #C4A5AF;
+    background-color: #ae316f;
     margin: 20px auto;
     text-align: center;
     font-size: 14px;
@@ -842,7 +842,7 @@
 {
     font-size: var(--h4-font-size);
     letter-spacing: var(--h4-letter-space);
-    color: #c094aa;
+    color: #ae316f;
     margin: 1rem;
 }
 

@@ -8,7 +8,7 @@
 .page{
     width: 100%;
     height: 100vh;
-    font-weight: 900;
+    font-weight: 500;
     font-size: 30px;
     color: #c094aa;
     margin: 0 auto;
@@ -35,7 +35,7 @@
     font-size: 24px;
     color: #B1A3A2;
 }
-.page a{
+.page a:not(.jump_btn){
     color: #555;
 }
 .page .cards{
@@ -70,30 +70,30 @@
     width: 100%;
     border-radius: 20px;
 }
-.txt_box .jump_btn{
-    display: block;
+.jump_btn{
+    /* display: block; */
     width: 120px;
     line-height: 50px;
     border-radius: 30px;
-    background-color: #C4A5AF;
+    background-color: #ae316f;
     text-align: center;
-    font-size: 14px;
+    font-size: 2rem;
     border: none;
     margin: 1rem;
-}
-.txt_box .jump_btn a{
     color: #f5f5f5;
 }
-.txt_box .jump_btn:hover{
+
+.jump_btn:hover{
     border: 1px solid #ae316f;
     background-color: #f5f5f5;
     font-weight: 900;
+    color: #ae316f;
 }
-.jump_btn{
+/* .jump_btn{
     width: 200px;
     line-height: 50px;
     border-radius: 30px;
-    background-color: #C4A5AF;
+    background-color: #ae316f;
     text-align: center;
     font-size: 14px;
     border: none;
@@ -109,7 +109,7 @@
 }
 .jump_btn:hover a{
     color: #ae316f;
-}
+} */
 @media screen and (max-width:767px) {
     .page5,.page6,.page7{
         height: auto;
@@ -236,11 +236,13 @@
     font-size: 20px;
     margin-bottom: 10px;
     color: #B1A3A2;
+    font-weight: 700;
 }
 .page6 .product .txt_box p{
     font-size: 16px;
     margin-bottom: 5px;
-    color: #111;
+    color: #666;
+    font-weight: 500;
 }
 .page6 .product .txt_box span{
     border: 1px solid red;
@@ -265,7 +267,7 @@
 /* store_location */
 .title>.store{
     font-weight: 900;
-    font-size: 60px;
+    font-size: 40px;
     color: #111;
     padding: 2rem;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -286,7 +288,7 @@
 .store_location .row .col .txt_container{
     text-align: center;
     margin: 2rem auto;
-    color: #111;
+    color: #666;
 }
 .store_location .row .col .txt_container h3{
     font-size: var(--h4-font-size);
