@@ -15,7 +15,6 @@
 .category .row nav ul li{
     font-size: 2.4rem;
     letter-spacing: .2rem;
-    /* color: #b4726e; */
     margin: 1rem;
 }
 .category .row nav ul li a:hover{
@@ -37,6 +36,11 @@
     outline: 1px solid #ae316f;
     border: none;
     border-radius: 2rem;
+}
+@media screen and (max-width:768px) {
+    .category .row nav ul li{
+        font-size: 2rem;
+    }
 }
 /* new_product */
 .new_product{

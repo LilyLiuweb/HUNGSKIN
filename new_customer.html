@@ -223,7 +223,7 @@
                             <p>原價:1000元</p>
                             <p>特價：770元</p>
                             <p>優惠至2022/10/31</p>
-                            <a class="jump_btn" href="#section6">選購商品</a>
+                            <a class="jump_btn" href="#section7">選購商品</a>
                         </div>
                     </div>
                 </div>
@@ -239,7 +239,6 @@
                             <p>適合喜歡使用後感覺膚質清爽無負擔的你</p>
                             <p>原價:1000元</p>
                             <p>特價：770元</p>
-                            <!-- <span>優惠</span> -->
                             <p>優惠至2022/10/31</p>
                             <a class="jump_btn" id="select1" href="#section7">選購商品</a>
                         </div>                  
@@ -251,7 +250,6 @@
         </div>
         <div class="page page7 section" id="section7">
             <h2>門市據點</h2>
-        <!-- store-location & contact-us -->
         <div class="store_location">
             <div class="row row-cols-1 row-cols-md-4">
                 <div class="col">
@@ -293,20 +291,49 @@
             </div>    
             <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100978.7681419415!2d-122.34834324209483!3d37.729382601441024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2z576O5ZyL5Yqg5Yip56aP5bC85Lqe6IiK6YeR5bGx!5e0!3m2!1szh-TW!2stw!4v1665329624296!5m2!1szh-TW!2stw" width="1960px" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> </div>
         </div>
-        <a class="jump_btn" href="#product">索取試用包</a>
-
+        <a class="jump_btn" id="open" href="#">索取試用包</a>
+        </div>
+    </div>
+    <div class="modal_container" id="modal_container">
+        <div class="modal">
+            <h2>預約索取試用包</h2>
+            <div class="">
+                 <label for="email">您的EMAIL</label>
+                <input type="email" name="email" id="email">
+            </div>
+           <div class="">
+                <label for="tel">您的手機</label>
+                <input type="tel" name="" id="">
+           </div>
+           <div class="">
+                <label for="">您可以預約的日期</label>
+                <input type="date" name="date" id="date">
+           </div>
+           <div class="">
+                <label for="">您可以預約的時間</label>
+                <input type="time" name="tel" id="tel">
+           </div>
+           <div class="">
+             <p class="service">請描述您需要的服務</p>
+            <textarea name="" id="" cols="20" rows="5"></textarea>
+            <div class="detail"><a href="#">提交</a></div> 
+           </div>
+            <p class="response">謝謝您!我們收到後將盡速由專人回覆您!</p> 
+            <button id="close">
+                關閉
+            </button>
         </div>
     </div>
 <!-- footer -->
 <footer class="footer">
     <div class="row email row-cols-1 row-cols-md-2">
         <div class="col">
-            <label for="email">輸入電子郵件拿折扣</label>
+            <label for="email">訂閱</label>
             <input type="email" name="email" id="email" placeholder="請輸入您的EMAIL">
             <button class="submit">提交</button>
         </div>
         <div class="col pic_container">
-            <p>社群媒體</p>
+            <p>媒體</p>
             <div class="pic"><i class='bx bxl-google'></i></div>
             <div class="pic"><i class='bx bxl-twitter' ></i></div>
             <div class="pic"><i class='bx bxl-instagram' ></i></div>
@@ -358,5 +385,20 @@
     <script src="./js/animate.js"></script>
     <script src="./js/new_customer.js"></script>
     <script src="./js/index.js"></script>
+
+    <script>
+         const open = document.getElementById('open'); 
+        const modal_container = document.getElementById('modal_container');
+        const close = document.getElementById('close');
+
+        open.addEventListener('click',function(){
+            modal_container.classList.add('show');
+        });
+
+        close.addEventListener('click',function(){
+            modal_container.classList.remove('show');
+        })
+
+    </script>
 </body>
 </html>

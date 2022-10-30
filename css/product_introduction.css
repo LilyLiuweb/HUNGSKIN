@@ -173,6 +173,13 @@ input[type='number']{
         text-align: center;
         font-size: 1.6rem;
     }
+   
+}
+@media screen and (max-width:768px) {
+    .buyIt,
+    .addCart{
+        width: 100px;
+    }
 }
 /*product_detail*/
 .product_detail{
