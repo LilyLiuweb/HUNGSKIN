@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="./css/animate.css">
     <link rel="stylesheet" href="./css/banner.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.css' rel='stylesheet'>
+      <!--boxicon-->
+      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.css' rel='stylesheet'>
     <!-- font-awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <!-- owl.carousel_css_cdn -->
@@ -102,7 +104,7 @@
             </tr>
             <tr>
                 <td><input type="checkbox" name="" id="checkbox" checked></td>
-                <td><div class="pic"><img src="img/product_list/new_product.jpg" alt="new_product"></div></td>
+                <td><div class="pic"><img src="img/product_list/spray1.jpg" alt="new_product"></div></td>
                 <td colspan="2">玫蘭克爾12號</td>
                 <td>$2000</td>
                 <td><input type="number" name="" id="num" value="1" min="0"></td>
@@ -113,7 +115,7 @@
             </tr>
             <tr>
                 <td><input type="checkbox" name="" id="checkbox2" checked></td>
-                <td><div class="pic"><img src="img/product_list/top1.png" alt=""></div></td>
+                <td><div class="pic"><img src="img/product_list/spray2.jpg" alt=""></div></td>
                 <td colspan="2">綠茶1號</td>
                 <td>$2000</td>
                 <td><input type="number" name="" id="num" value="1" min="0"></td>
@@ -135,12 +137,22 @@
             </div>
             
             <div class="btn_wrap">
-                <div class="buyIt"><a href="#">結帳</a></div>
+                <div class="buyIt"><a href="#" id="pay">結帳</a></div>
                 <div class="addCart"><a href="product_list.html">繼續購物</a></div>
             </div>
         </div>
     </div>
 </div>
+<div class="modal_container" id="modal_container">
+    <div class="modal">
+        <h2>購買成功!</h2>
+        <i class='bx bxs-check-circle'></i>
+        <button id="close">
+            Close me
+        </button>
+    </div>
+</div>
+
 <!--more-info-->
 <div class="more-info">
     <div class="row row-cols-1">
@@ -245,6 +257,7 @@
  <script src="./js/tab.js"></script>
  <script src="./js/animate.js"></script>
  <script>
+    /*nav bg change*/
     window.addEventListener("scroll",function(){
     if(document.documentElement.scrollTop>400){
             $id("header").classList.add("bg_change");
@@ -252,6 +265,18 @@
             $id("header").classList.remove("bg_change");
         }
     })
+    /*modal confirm*/
+        const open = document.getElementById('pay'); 
+        const modal_container = document.getElementById('modal_container');
+        const close = document.getElementById('close');
+
+        open.addEventListener('click',function(){
+            modal_container.classList.add('show');
+        });
+
+        close.addEventListener('click',function(){
+            modal_container.classList.remove('show');
+        })
 </script>
 </body>
 </html>
