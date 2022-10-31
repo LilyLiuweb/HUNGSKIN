@@ -32,7 +32,7 @@ body a{
     vertical-align: middle;
 }
 .cart_content table input{
-    width: 20px;
+    width: 40px;
     height: 30px;
 }
 .cart_content table tr:nth-child(2) td:nth-child(1){

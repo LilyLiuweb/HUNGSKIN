@@ -106,10 +106,13 @@
                 <td><input type="checkbox" name="" id="checkbox" checked></td>
                 <td><div class="pic"><img src="img/product_list/spray1.jpg" alt="new_product"></div></td>
                 <td colspan="2">玫蘭克爾12號</td>
-                <td>$2000</td>
+                <td class="singlePrice">1000</td>
                 <td><input type="number" name="" id="num" value="1" min="0"></td>
-                <td>$2000 </td>
-                <td><p><a href="product_introduction.html">找類似</a></p>
+                <td class="singleSum">1000</td>
+                <td>
+                    <p>
+                        <a href="product_introduction.html">找類似</a>
+                    </p>
                 <p>清除</p>
                 </td>
             </tr>
@@ -117,10 +120,13 @@
                 <td><input type="checkbox" name="" id="checkbox2" checked></td>
                 <td><div class="pic"><img src="img/product_list/spray2.jpg" alt=""></div></td>
                 <td colspan="2">綠茶1號</td>
-                <td>$2000</td>
+                <td class="singlePrice">1500</td>
                 <td><input type="number" name="" id="num" value="1" min="0"></td>
-                <td>$2000 </td>
-                <td><p><a href="product_introduction.html">找類似</a></p>
+                <td class="singleSum">1500</td>
+                <td>
+                    <p>
+                        <a href="product_introduction.html">找類似</a>
+                    </p>
                     <p>清除</p>
                 </td>
             </tr>
@@ -129,7 +135,7 @@
         <div class="sum_container">
             <div class="box sum_box">
                 <div class="title sum_title">商品總計: </div>
-                <div class="price sum_price">$4000</div>
+                <div class="price sum_price" id="sum_price">4000</div>
             </div>
             <div class="box bonus_box">
             <div class="title bouns_title">紅利點數: </div>    
@@ -265,6 +271,25 @@
             $id("header").classList.remove("bg_change");
         }
     })
+    /*num*/
+    $('input[type="number"]').change(function(){
+            //所有單品各自數量
+            let qty = document.querySelectorAll('input[type="number"]');
+            //所有單品各自價格
+            let singlePrice = document.querySelectorAll('.singlePrice');
+            //所有單品各自總計
+            let singleSum = document.querySelectorAll('.singleSum');
+            //加總單品小計
+            let Total = document.getElementById('sum_price');
+            let singleSUM;
+            Total = 0;
+            for(let i=0; i<=qty.length-1;i++){     
+                    singleSUM = parseInt($(singlePrice[i]).text()) * $(qty[i]).val();
+                    $(singleSum[i]).text(singleSUM); 
+                    Total += singleSUM;
+                }
+                Total = $('#sum_price').text(Total);
+            })
     /*modal confirm*/
         const open = document.getElementById('pay'); 
         const modal_container = document.getElementById('modal_container');
