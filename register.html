@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>喚彼膚HUAGSKIN|喚醒你的每一寸肌膚</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/css_var.css">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/header&footer.css">
+    <link rel="stylesheet" href="./css/account.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/banner.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.css' rel='stylesheet'>
+    <!-- font-awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- owl.carousel_css_cdn -->
+     <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <!-- jQuery.js v3.6.1 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"></script>
+
+</head>
+<body>
+    <main>
+        <div class="animated-form">
+            <form class="form">
+                <h1 class="form-title">註冊</h1>
+                <div class="form-div">
+                    <input type="email" class="form-input" placeholder="" >
+                    <label class="form-label">Email</label>
+                </div>
+                <div class="form-div">
+                    <input type="password" class="form-input" placeholder="">
+                    <label class="form-label">Password</label>
+                </div>
+                <div class="form-div">
+                    <input type="password" class="form-input" placeholder="">
+                    <label class="form-label">confirm Password</label>
+                </div>
+                <div class="function_nav">
+                    <button class="submit" id="submit">提交</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="modal_container" id="modal_container">
+        <div class="modal">
+            <h2>提交成功!</h2>
+            <i class='bx bxs-check-circle'></i>
+            <button id="close">
+                Close me
+            </button>
+        </div>
+    </div>
+    <script>
+        /*modal confirm*/
+        const open = document.getElementById('submit'); 
+        const modal_container = document.getElementById('modal_container');
+        const close = document.getElementById('close');
+
+        open.addEventListener('click',function(){
+            modal_container.classList.add('show');
+        });
+
+        close.addEventListener('click',function(){
+            modal_container.classList.remove('show');
+        })
+    </script>
+</body>
+</html>
