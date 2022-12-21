@@ -282,6 +282,8 @@
             //加總單品小計
             let Total = document.getElementById('sum_price');
             let singleSUM;
+
+            //初始化總計
             Total = 0;
             for(let i=0; i<=qty.length-1;i++){     
                     singleSUM = parseInt($(singlePrice[i]).text()) * $(qty[i]).val();
