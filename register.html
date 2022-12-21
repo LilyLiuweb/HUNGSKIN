@@ -26,11 +26,6 @@
         <div class="animated-form">
             <form class="form">
                 <h1 class="form-title">註冊</h1>
-                
-                <div class="form-div">
-                    <input type="text" class="form-input" placeholder="" >
-                    <label class="form-label">會員姓名</label>
-                </div>
                 <div class="form-div">
                     <input type="email" class="form-input" placeholder="" >
                     <label class="form-label">Email</label>
@@ -41,14 +36,36 @@
                 </div>
                 <div class="form-div">
                     <input type="password" class="form-input" placeholder="">
-                    <label class="form-label">confirm your Password</label>
+                    <label class="form-label">confirm Password</label>
                 </div>
                 <div class="function_nav">
-                    <button type="submit" class="buyIt"><a href="#">送出</a></button>
-                    <div class="addCart"><a href="index.html">返回首頁</a></div>
+                    <button class="submit" id="submit">提交</button>
                 </div>
             </div>
-        </div> 
+        </div>
     </main>
+    <div class="modal_container" id="modal_container">
+        <div class="modal">
+            <h2>提交成功!</h2>
+            <i class='bx bxs-check-circle'></i>
+            <button id="close">
+                Close me
+            </button>
+        </div>
+    </div>
+    <script>
+        /*modal confirm*/
+        const open = document.getElementById('submit'); 
+        const modal_container = document.getElementById('modal_container');
+        const close = document.getElementById('close');
+
+        open.addEventListener('click',function(){
+            modal_container.classList.add('show');
+        });
+
+        close.addEventListener('click',function(){
+            modal_container.classList.remove('show');
+        })
+    </script>
 </body>
 </html>
