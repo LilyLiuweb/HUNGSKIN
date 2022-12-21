@@ -171,24 +171,39 @@
             <div id="contact" class="area active">
                 <h2>contact</h2>
                 <ul>
-                    <li>聯絡人</li>
-                    <li>聯絡資訊</li>
-                    <li>聯絡時段</li>
+                    <li>聯絡人
+                        <input type="text">
+                    </li>
+                    <li>聯絡資訊
+                        <input type="tel">
+                    </li>
+                    <li>聯絡時段
+                        <input type="date" name="" id="">
+                    </li>
                 </ul>
             </div>
         
             <div id="payment" class="area">
                 <h2>payment</h2>
                 <ul>
-                    <li>付款人</li>
-                    <li>付款資訊</li>
-                    <li>付款時段</li>
+                    <li>付款人
+                        <input type="text">
+                    </li>
+                    <li>付款資訊
+                        <input type="tel">
+                    </li>
+                    <li>付款方式
+                        <select name="" id="" value="">
+                            <option value="">信用卡</option>
+                            <option value="">轉帳</option>
+                            <option value="">貨到付款</option>
+                        </select>
+                    </li>
                 </ul>
             </div>
             <div id="finish" class="area">
                 <h2>finish</h2>
                 <ul>
-                    <li>完成</li>
                     <li>歡迎再次光臨</li>
                 </ul>
             </div>
@@ -282,6 +297,8 @@
             //加總單品小計
             let Total = document.getElementById('sum_price');
             let singleSUM;
+
+            //初始化總計
             Total = 0;
             for(let i=0; i<=qty.length-1;i++){     
                     singleSUM = parseInt($(singlePrice[i]).text()) * $(qty[i]).val();

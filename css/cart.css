@@ -31,9 +31,15 @@ body a{
 .cart_content table tr th{
     vertical-align: middle;
 }
-.cart_content table input{
+.cart_content table input:nth-child(1){
+    width: 20px;
+    height: 30px;
+}
+.cart_content table input[type="number"]{
     width: 40px;
     height: 30px;
+    text-align: center;
+    font-size: 1.6rem;
 }
 .cart_content table tr:nth-child(2) td:nth-child(1){
     margin: 0 auto;
@@ -48,7 +54,6 @@ body a{
 .cart_content table tr:nth-child(3) td:nth-child(2) .pic{
     display: flex;
     width: 200px;
-    /* height: 100px; */
 }
 .cart_content table tr:nth-child(2) td:nth-child(2) .pic img,
 .cart_content table tr:nth-child(3) td:nth-child(2) .pic img{
@@ -147,7 +152,6 @@ body a{
     {
         display: none;
     }
-
 }
 /* more-info */
 .more-info{
@@ -217,4 +221,10 @@ body a{
     .more-info{
         font-size: 1.6rem;
     }
+}
+
+.area ul li input,select{
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
 }
